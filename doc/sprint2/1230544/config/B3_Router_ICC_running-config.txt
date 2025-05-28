@@ -1,0 +1,102 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX10174BLO-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.372
+ encapsulation dot1Q 372
+ ip address 10.22.107.1 255.255.255.128
+!
+interface FastEthernet0/0.373
+ encapsulation dot1Q 373
+ ip address 10.22.106.1 255.255.255.0
+!
+interface FastEthernet0/0.374
+ encapsulation dot1Q 374
+ ip address 10.22.104.1 255.255.255.0
+!
+interface FastEthernet0/0.375
+ encapsulation dot1Q 375
+ ip address 10.22.107.129 255.255.255.192
+!
+interface FastEthernet0/0.376
+ encapsulation dot1Q 376
+ ip address 10.22.105.1 255.255.255.0
+!
+interface FastEthernet0/1
+ ip address 10.22.97.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan372
+ mac-address 0002.4a53.b401
+ no ip address
+!
+router rip
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 10.22.97.1 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+

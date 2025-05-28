@@ -1,0 +1,284 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+ip dhcp excluded-address 10.22.108.1 10.22.108.10
+ip dhcp excluded-address 10.22.109.1 10.22.109.10
+ip dhcp excluded-address 10.22.110.1 10.22.110.10
+ip dhcp excluded-address 10.22.111.1 10.22.111.10
+ip dhcp excluded-address 10.22.109.100
+!
+ip dhcp pool WIFI_B4
+ network 10.22.108.0 255.255.255.0
+ default-router 10.22.108.1
+ dns-server 10.22.111.130
+ domain-name building-4.rcomp-24-25-dd-g2
+ip dhcp pool VOIP_B4
+ network 10.22.109.0 255.255.255.0
+ default-router 10.22.109.1
+ option 150 ip 10.22.109.1
+ dns-server 10.22.111.130
+ domain-name building-4.rcomp-24-25-dd-g2
+ip dhcp pool F1_B4
+ network 10.22.110.0 255.255.255.0
+ default-router 10.22.110.1
+ dns-server 10.22.111.130
+ domain-name building-4.rcomp-24-25-dd-g2
+ip dhcp pool F0_B4
+ network 10.22.111.0 255.255.255.128
+ default-router 10.22.111.1
+ dns-server 10.22.111.130
+ domain-name building-4.rcomp-24-25-dd-g2
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX10176555-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.377
+ encapsulation dot1Q 377
+ ip address 10.22.111.1 255.255.255.128
+ ip access-group GROUND_FLOOR_ACL_B4 in
+!
+interface FastEthernet0/0.378
+ encapsulation dot1Q 378
+ ip address 10.22.110.1 255.255.255.0
+ ip access-group FLOOR1_ACL_B4 in
+!
+interface FastEthernet0/0.379
+ encapsulation dot1Q 379
+ ip address 10.22.108.1 255.255.255.0
+ ip access-group WIFI_ACL_B4 in
+!
+interface FastEthernet0/0.380
+ description VLAN 380  DMZ (DNS/Web)
+ encapsulation dot1Q 380
+ ip address 10.22.111.129 255.255.255.192
+ ip nat inside
+!
+interface FastEthernet0/0.381
+ encapsulation dot1Q 381
+ ip address 10.22.109.1 255.255.255.0
+ ip access-group VOIP_ACL_B4 in
+!
+interface FastEthernet0/0.382
+ encapsulation dot1Q 382
+ ip address 10.22.97.5 255.255.255.0
+ ip access-group INTERNET_ACL_B4 in
+ ip nat outside
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ router-id 4.4.4.4
+ log-adjacency-changes
+ network 10.22.97.0 0.0.0.255 area 0
+ network 10.22.111.0 0.0.0.127 area 4
+ network 10.22.110.0 0.0.0.255 area 4
+ network 10.22.108.0 0.0.0.255 area 4
+ network 10.22.111.128 0.0.0.63 area 4
+ network 10.22.109.0 0.0.0.255 area 4
+!
+ip nat inside source static tcp 10.22.111.130 80 10.22.97.5 80 
+ip nat inside source static tcp 10.22.111.130 443 10.22.97.5 443 
+ip classless
+!
+ip flow-export version 9
+!
+!
+ip access-list extended INTERNET_ACL_B4
+ permit tcp any host 10.22.109.1 eq 2000
+ permit udp any host 10.22.109.1 eq 5060
+ permit tcp any host 10.22.109.1 eq 5060
+ permit ip any 10.22.109.0 0.0.0.255
+ permit ip any 10.22.108.0 0.0.0.255
+ permit ip any 10.22.110.0 0.0.0.255
+ permit ip any 10.22.111.0 0.0.0.127
+ permit icmp any any
+ permit tcp any host 10.22.97.5 eq www
+ permit tcp any host 10.22.97.5 eq 443
+ permit tcp any host 10.22.97.5 eq domain
+ permit udp any host 10.22.97.5 eq domain
+ permit ospf any any
+ permit ip any any
+ deny ip any any
+ip access-list extended WIFI_ACL_B4
+ deny ip any host 10.22.111.1
+ deny ip any host 10.22.110.1
+ deny ip any host 10.22.108.1
+ deny ip any host 10.22.111.129
+ deny ip any host 10.22.109.1
+ deny ip any host 10.22.97.5
+ permit icmp any any
+ permit tcp any host 10.22.111.130 eq www
+ permit tcp any host 10.22.111.130 eq 443
+ permit udp any host 10.22.111.130 eq domain
+ permit tcp any host 10.22.111.130 eq domain
+ deny ip any 10.22.111.128 0.0.0.63
+ permit ip 10.22.111.128 0.0.0.63 any
+ permit ip 10.22.110.0 0.0.0.255 any
+ permit ip 10.22.111.0 0.0.0.127 any
+ permit udp any eq bootpc any eq bootps
+ permit udp any eq tftp any eq tftp
+ permit ospf any any
+ deny ip any any
+ip access-list extended VOIP_ACL_B4
+ permit udp any host 10.22.109.1 eq bootps
+ permit udp any host 10.22.109.1 eq tftp
+ permit tcp any host 10.22.109.1 eq 2000
+ permit udp any host 10.22.109.1 eq 5060
+ permit tcp any host 10.22.109.1 eq 5060
+ deny ip any host 10.22.111.1
+ deny ip any host 10.22.110.1
+ deny ip any host 10.22.108.1
+ deny ip any host 10.22.111.129
+ deny ip any host 10.22.109.1
+ deny ip any host 10.22.97.5
+ permit icmp any any
+ permit tcp any host 10.22.111.130 eq www
+ permit tcp any host 10.22.111.130 eq 443
+ permit udp any host 10.22.111.130 eq domain
+ permit tcp any host 10.22.111.130 eq domain
+ deny ip any 10.22.111.128 0.0.0.63
+ permit ip 10.22.111.128 0.0.0.63 any
+ permit ip 10.22.109.0 0.0.0.255 any
+ permit udp any eq bootpc any eq bootps
+ permit udp any eq tftp any eq tftp
+ permit ospf any any
+ deny ip any any
+ip access-list extended GROUND_FLOOR_ACL_B4
+ deny ip any host 10.22.111.1
+ deny ip any host 10.22.110.1
+ deny ip any host 10.22.108.1
+ deny ip any host 10.22.111.129
+ deny ip any host 10.22.109.1
+ deny ip any host 10.22.97.5
+ permit icmp any any
+ permit tcp any host 10.22.111.130 eq www
+ permit tcp any host 10.22.111.130 eq 443
+ permit udp any host 10.22.111.130 eq domain
+ permit tcp any host 10.22.111.130 eq domain
+ deny ip any 10.22.111.128 0.0.0.63
+ permit ip 10.22.111.128 0.0.0.63 any
+ permit ip 10.22.111.0 0.0.0.127 any
+ permit udp any eq bootpc any eq bootps
+ permit udp any eq tftp any eq tftp
+ permit ospf any any
+ deny ip any any
+ip access-list extended FLOOR1_ACL_B4
+ deny ip any host 10.22.111.1
+ deny ip any host 10.22.110.1
+ deny ip any host 10.22.108.1
+ deny ip any host 10.22.111.129
+ deny ip any host 10.22.109.1
+ deny ip any host 10.22.97.5
+ permit icmp any any
+ permit tcp any host 10.22.111.130 eq www
+ permit tcp any host 10.22.111.130 eq 443
+ permit udp any host 10.22.111.130 eq domain
+ permit tcp any host 10.22.111.130 eq domain
+ deny ip any 10.22.111.128 0.0.0.63
+ permit ip 10.22.111.128 0.0.0.63 any
+ permit ip 10.22.110.0 0.0.0.255 any
+ permit udp any eq bootpc any eq bootps
+ permit udp any eq tftp any eq tftp
+ permit ospf any any
+ deny ip any any
+!
+!
+!
+!
+!
+dial-peer voice 1 voip
+ destination-pattern 1...
+ session target ipv4:10.22.99.1
+!
+dial-peer voice 2 voip
+ destination-pattern 2...
+ session target ipv4:10.22.102.1
+!
+dial-peer voice 3 voip
+ destination-pattern 3...
+ session target ipv4:10.22.105.1
+!
+dial-peer voice 4 voip
+ destination-pattern 4...
+ session target ipv4:10.22.109.1
+!
+telephony-service
+ max-ephones 18
+ max-dn 18
+ ip source-address 10.22.109.1 port 2000
+ auto assign 1 to 18
+!
+ephone-dn 1
+ number 4001
+!
+ephone-dn 2
+ number 4002
+!
+ephone 1
+ device-security-mode none
+ mac-address 000A.41E2.955C
+ type 7960
+ button 1:2
+!
+ephone 2
+ device-security-mode none
+ mac-address 0001.C7EC.E249
+ type 7960
+ button 1:1
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
