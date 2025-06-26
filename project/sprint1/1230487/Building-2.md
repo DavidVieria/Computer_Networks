@@ -534,7 +534,7 @@ In room 2.1.12 was installed:
 Tools used to carry out the project:
 
 - Adobe Acrobat Reader - to take measurements from the building plans:
-  - [PDF - Medidas](https://acrobat.adobe.com/id/urn:aaid:sc:EU:b0543f0b-3f7f-44bd-922c-eee67886ba88)
+  - [PDF - Measurements](https://acrobat.adobe.com/id/urn:aaid:sc:EU:b0543f0b-3f7f-44bd-922c-eee67886ba88)
 
 - Excel - for calculations and tables:
   - [Excel - Tabelas (cálculos)](calculation_tables.xlsx)
