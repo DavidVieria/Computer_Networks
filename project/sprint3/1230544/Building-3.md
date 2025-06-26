@@ -1,45 +1,45 @@
 # 🏢 Building 3
 
-### Detalhes de Configuração e Implementação
+### Configuration and Implementation Details
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## 🧩 Sub-tarefas
+## 🧩 Subtasks
 
-|  **Tarefa**  | **Descrição da tarefa**                                                                                | **Status** |
-|:------------:|--------------------------------------------------------------------------------------------------------|:----------:|
-| OSPF Routing | Configurar OSPF com área própria para o edifício.                                                      |     ✅      |
-| HTTP Server  | Adicionar segundo servidor HTTP/HTTPS na DMZ com IP estático e página HTML que identifique o edifício. |     ✅      |
-|    DHCPv4    | Configurar DHCPv4 para todas as VLANs exceto DMZ e backbone; incluir a opção 150 para VoIP.            |     ✅      |
-|     VoIP     | Configurar serviço de VoIP com dois telefones IP modelo 7960 e VLAN de voz nos switches.               |     ✅      |
-|     DNS      | Criar subdomínio, configurar servidor DNS. Conhecer IP do servidor DNS de building 1.                  |     ✅      |
-|   Firewall   | Configurar ACLs para implementar firewall estático.                                                    |     ✅      |
+|   **Task**   | **Task Description**                                                                                  | **Status** |
+|:------------:|-------------------------------------------------------------------------------------------------------|:----------:|
+| OSPF Routing | Configure OSPF with a dedicated area for the building.                                                |     ✅      |
+| HTTP Server  | Add a second HTTP/HTTPS server in the DMZ with a static IP and an HTML page identifying the building. |     ✅      |
+|    DHCPv4    | Configure DHCPv4 for all VLANs except DMZ and backbone; include option 150 for VoIP.                  |     ✅      |
+|     VoIP     | Configure VoIP service with two 7960 IP phones and voice VLANs on the switches.                       |     ✅      |
+|     DNS      | Create subdomain, configure DNS server. Know the IP of the DNS server in building 1.                  |     ✅      |
+|   Firewall   | Configure ACLs to implement a static firewall.                                                        |     ✅      |
 
 ---
 
 
 ## 🔄 OSPF Dynamic Routing
 
-**Configuração implementada:**
-- **Área OSPF:** 3 (0.0.0.3)
+**Implemented configuration:**
+- **OSPF Area:** 3 (0.0.0.3)
 - **Router-ID:** 3.3.3.3
 
-**Redes anunciadas no OSPF:**
+**Networks advertised in OSPF:**
 - 10.22.104.0/24 (VLAN 374 - WiFi)
 - 10.22.105.0/24 (VLAN 376 - VoIP)
 - 10.22.106.0/24 (VLAN 373 - F1)
 - 10.22.107.0/25 (VLAN 372 - F0)
 - 10.22.107.128/26 (VLAN 375 - DMZ)
-- 10.22.97.0/24 (VLAN 382 - Backbone - Área 0)
+- 10.22.97.0/24 (VLAN 382 - Backbone - Area 0)
 
 ---
 
 ## 🖥️ HTTP Server (Server 1)
 
-**Servidor adicionado:** 10.22.107.131
-- **Serviços ativos:** HTTP (porta 80) e HTTPS (porta 443)
-- **Página HTML:** Identifica o Edifício 3
-- **Configuração:** IP estático na DMZ
+**Server added:** 10.22.107.131
+- **Active services:** HTTP (port 80) and HTTPS (port 443)
+- **HTML page:** Identifies Building 3
+- **Configuration:** Static IP in the DMZ
 
 ---
 
@@ -52,46 +52,46 @@
 | F1_B3     | 10.22.106.0   | 255.255.255.0   | 10.22.106.1    | 10.22.106.1 - 10.22.106.10                | None                    | F1   |
 | F0_B3     | 10.22.107.0   | 255.255.255.128 | 10.22.107.1    | 10.22.107.1 - 10.22.107.10                | None                    | F0   |
 
-**Configurações adicionais:**
-- **Domain-name:** building-3.rcomp-24-25-dd-g2 (configurado em todas as pools)
-- **DNS Server:** 10.22.107.130 (servidor DNS local)
+**Additional configurations:**
+- **Domain-name:** building-3.rcomp-24-25-dd-g2 (configured in all pools)
+- **DNS Server:** 10.22.107.130 (local DNS server)
 
 ---
 
 ## ☎️ VoIP Service
 
-**Configuração implementada:**
-- **Prefixo telefónico:** 3xxx
-- **Números atribuídos:** 3001, 3002
-- **TFTP Server:** 10.22.105.1 (IP do router na VLAN VoIP)
-- **Telefones instalados:** 2x Cisco IP Phone 7960
-- **MACs configurados:**
-    - ephone 1: 00D0.97DA.C6E1 (número 3001)
-    - ephone 2: 00D0.97E7.DA3A (número 3002)
+**Implemented configuration:**
+- **Phone prefix:** 3xxx
+- **Assigned numbers:** 3001, 3002
+- **TFTP Server:** 10.22.105.1 (Router IP in VoIP VLAN)
+- **Phones installed:** 2x Cisco IP Phone 7960
+- **MACs configured:**
+    - ephone 1: 00D0.97DA.C6E1 (number 3001)
+    - ephone 2: 00D0.97E7.DA3A (number 3002)
 
-**Configuração telephony-service:**
+**Telephony-service configuration:**
 - **Max ephones:** 17
 - **Max dn:** 17
 - **IP source-address:** 10.22.105.1 port 2000
 - **Auto assign:** 1 to 17
 
-**Configuração dos switches:**
-- **Access VLAN:** Desabilitada (`no switchport access vlan`)
+**Switch configuration:**
+- **Access VLAN:** Disabled (`no switchport access vlan`)
 - **Voice VLAN:** VLAN 376 (`switchport voice vlan 376`)
 
-**Dial-peers para outros edifícios:**
-- **Prefixo 1xxx → 10.22.99.1** (Building 1)
-- **Prefixo 2xxx → 10.22.102.1** (Building 2)
-- **Prefixo 4xxx → 10.22.109.1** (Building 4)
+**Dial-peers for other buildings:**
+- **Prefix 1xxx → 10.22.99.1** (Building 1)
+- **Prefix 2xxx → 10.22.102.1** (Building 2)
+- **Prefix 4xxx → 10.22.109.1** (Building 4)
 
 ---
 
 ## 🌐 DNS Configuration
 
-**Servidor DNS:** 10.22.107.130 (ns.building-3.rcomp-24-25-dd-g2)
-**Subdomínio:** building-3.rcomp-24-25-dd-g2
+**DNS Server:** 10.22.107.130 (ns.building-3.rcomp-24-25-dd-g2)
+**Subdomain:** building-3.rcomp-24-25-dd-g2
 
-### Base de Dados DNS
+### DNS Database
 
 | No. |                 Name                 |   Type   |                Detail                |
 |:---:|:------------------------------------:|:--------:|:------------------------------------:|
@@ -109,15 +109,15 @@
 ![DNSDatabase.png](DNS_Database_3.png)
 
 
-**Configuração dos clientes:**
-- **Servidores (IP estático):** DNS configurado manualmente para 10.22.107.130
-- **Clientes DHCP:** DNS configurado automaticamente via DHCP
+**Client configuration:**
+- **Servers (static IP):** DNS manually configured to 10.22.107.130
+- **DHCP clients:** DNS automatically configured via DHCP
 
 ---
 
 ## 🔀 NAT (Network Address Translation)
 
-**Regras implementadas:**
+**Implemented rules:**
 ```cisco
 ip nat inside source static tcp 10.22.107.130 80 10.22.97.4 80
 ip nat inside source static tcp 10.22.107.130 443 10.22.97.4 443
@@ -127,16 +127,16 @@ ip nat inside source static tcp 10.22.107.130 443 10.22.97.4 443
 - **DMZ (Fa0/0.375):** `ip nat inside`
 - **Backbone (Fa0/0.382):** `ip nat outside`
 
-**Resultado:** Pedidos HTTP/HTTPS recebidos na interface backbone (10.22.97.4) são redirecionados para o servidor DNS (10.22.107.130).
+**Result:** HTTP/HTTPS requests received on the backbone interface (10.22.97.4) are redirected to the DNS server (10.22.107.130).
 
 ---
 
 ## 🔒 Static Firewall (ACLs)
 
-### ACLs Implementadas
+### Implemented ACLs
 
-#### **INTERNET_ACL_B3** (aplicada à VLAN 382 - Backbone - entrada)
-**Objetivo:** Controlar tráfego vindo da internet/backbone
+#### **INTERNET_ACL_B3** (applied to VLAN 382 - Backbone - inbound)
+**Objective:** Control traffic coming from the internet/backbone
 
 ```cisco
 ip access-list extended INTERNET_ACL_B3
@@ -157,8 +157,8 @@ ip access-list extended INTERNET_ACL_B3
  deny ip any any
 ```
 
-#### **WIFI_ACL_B3** (aplicada à VLAN 374 - WiFi - entrada)
-**Objetivo:** Restringir acesso da rede WiFi a recursos internos
+#### **WIFI_ACL_B3** (applied to VLAN 374 - WiFi - inbound)
+**Objective:** Restrict WiFi network access to internal resources
 
 ```cisco
 ip access-list extended WIFI_ACL_B3
@@ -183,8 +183,8 @@ ip access-list extended WIFI_ACL_B3
  deny ip any any
 ```
 
-#### **VOIP_ACL_B3** (aplicada à VLAN 376 - VoIP - entrada)
-**Objetivo:** Permitir tráfego VoIP e restringir acesso a outros recursos
+#### **VOIP_ACL_B3** (applied to VLAN 376 - VoIP - inbound)
+**Objective:** Allow VoIP traffic and restrict access to other resources
 
 ```cisco
 ip access-list extended VOIP_ACL_B3
@@ -213,8 +213,8 @@ ip access-list extended VOIP_ACL_B3
  deny ip any any
 ```
 
-#### **GROUND_FLOOR_ACL_B3** (aplicada à VLAN 372 - F0 - entrada)
-**Objetivo:** Controlar acesso do piso térreo
+#### **GROUND_FLOOR_ACL_B3** (applied to VLAN 372 - F0 - inbound)
+**Objective:** Control access from the ground floor
 
 ```cisco
 ip access-list extended GROUND_FLOOR_ACL_B3
@@ -238,8 +238,8 @@ ip access-list extended GROUND_FLOOR_ACL_B3
  deny ip any any
 ```
 
-#### **FLOOR1_ACL_B3** (aplicada à VLAN 373 - F1 - entrada)
-**Objetivo:** Controlar acesso do primeiro andar
+#### **FLOOR1_ACL_B3** (applied to VLAN 373 - F1 - inbound)
+**Objective:** Control access from the first floor
 
 ```cisco
 ip access-list extended FLOOR1_ACL_B3
@@ -263,27 +263,27 @@ ip access-list extended FLOOR1_ACL_B3
  deny ip any any
 ```
 
-### Resumo da Política de Segurança
+### Security Policy Summary
 
-**Princípios aplicados:**
-1. **Negação por padrão:** Todas as ACLs terminam com `deny ip any any`
-2. **Proteção de infraestrutura:** IPs dos routers/gateways são protegidos
-3. **Serviços essenciais:** DHCP, DNS, TFTP e OSPF são sempre permitidos
-4. **Segmentação:** Cada VLAN tem controle específico baseado na sua função
-5. **VoIP segregado:** VLAN VoIP tem regras específicas para telefonia
-6. **DMZ protegida:** Acesso direto à DMZ é negado, apenas respostas são permitidas
+**Applied principles:**
+1. **Deny by default:** All ACLs end with `deny ip any any`
+2. **Infrastructure protection:** IPs of routers/gateways are protected
+3. **Essential services:** DHCP, DNS, TFTP, and OSPF are always allowed
+4. **Segmentation:** Each VLAN has specific control based on its function
+5. **VoIP segregated:** VoIP VLAN has specific rules for telephony
+6. **DMZ protected:** Direct access to the DMZ is denied, only responses are allowed
 
 ---
 
-## 📊 Interfaces e VLANs Configuradas
+## 📊 Configured Interfaces and VLANs
 
-| **Interface** | **VLAN** | **IP/Máscara**        | **Descrição**       | **ACL Aplicada**    |
-|---------------|----------|-----------------------|---------------------|---------------------|
-| Fa0/0.372     | 372      | 10.22.107.1/25        | Ground Floor (F0)   | GROUND_FLOOR_ACL_B3 |
-| Fa0/0.373     | 373      | 10.22.106.1/24        | Floor 1 (F1)        | FLOOR1_ACL_B3       |
-| Fa0/0.374     | 374      | 10.22.104.1/24        | WiFi                | WIFI_ACL_B3         |
-| Fa0/0.375     | 375      | 10.22.107.129/26      | DMZ                 | -                   |
-| Fa0/0.376     | 376      | 10.22.105.1/24        | VoIP                | VOIP_ACL_B3         |
-| Fa0/0.382     | 382      | 10.22.97.4/24         | Backbone            | INTERNET_ACL_B3     |
+| **Interface** | **VLAN** | **IP/Mask**      | **Description**   | **Applied ACL**     |
+|---------------|----------|------------------|-------------------|---------------------|
+| Fa0/0.372     | 372      | 10.22.107.1/25   | Ground Floor (F0) | GROUND_FLOOR_ACL_B3 |
+| Fa0/0.373     | 373      | 10.22.106.1/24   | Floor 1 (F1)      | FLOOR1_ACL_B3       |
+| Fa0/0.374     | 374      | 10.22.104.1/24   | WiFi              | WIFI_ACL_B3         |
+| Fa0/0.375     | 375      | 10.22.107.129/26 | DMZ               | -                   |
+| Fa0/0.376     | 376      | 10.22.105.1/24   | VoIP              | VOIP_ACL_B3         |
+| Fa0/0.382     | 382      | 10.22.97.4/24    | Backbone          | INTERNET_ACL_B3     |
 
 ---

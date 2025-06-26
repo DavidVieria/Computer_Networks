@@ -2,111 +2,109 @@
 
 ## 1. Backlog
 
-| **Tarefa** | **Descrição da tarefa**                                                                                                                                                                                          |  **Aluno**  |
-|:----------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
-|  **2.1**   | Desenvolvimento de uma simulação do Packet Tracer de camada dois e camada três para o edifício 1, abrangendo o backbone do campus. Integração da simulação do Packet Tracer de cada membro numa única simulação. | **1230543** |
-|  **2.2**   | Desenvolvimento de uma simulação do Packet Tracer de camada dois e camada três para o edifício 2, abrangendo o backbone do campus.                                                                               | **1230487** |
-|  **2.3**   | Desenvolvimento de uma simulação do Packet Tracer de camada dois e camada três para o edifício 3, abrangendo o backbone do campus.                                                                               | **1230544** |
-|  **2.4**   | Desenvolvimento de uma simulação do Packet Tracer de camada dois e camada três para o edifício 4, abrangendo o backbone do campus.                                                                               | **1231046** |
+| **Task** | **Task Description**                                                                                                                                                                                        | **Student** |
+|:--------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
+| **2.1**  | Development of a Packet Tracer simulation for both layer two and layer three for Building 1, including the campus backbone. Integration of each member's Packet Tracer simulation into a single simulation. | **1230543** |
+| **2.2**  | Development of a Packet Tracer simulation for both layer two and layer three for Building 2, including the campus backbone.                                                                                 | **1230487** |
+| **2.3**  | Development of a Packet Tracer simulation for both layer two and layer three for Building 3, including the campus backbone.                                                                                 | **1230544** |
+| **2.4**  | Development of a Packet Tracer simulation for both layer two and layer three for Building 4, including the campus backbone.                                                                                 | **1231046** |
 
 <br>
 
 ## 2. Review:
 
->Durante este sprint, o grupo composto por quatro elementos organizou-se de forma a distribuir o trabalho equitativamente. Cada membro ficou responsável pela simulação de um edifício (Edifícios 1 a 4), garantindo a implementação completa em Packet Tracer.
+>During this sprint, the group of four members organized themselves to distribute the work equally. Each member was responsible for the simulation of one building (Buildings 1 to 4), ensuring complete implementation in Packet Tracer.
 
->Cada simulação incluiu a introdução e configuração de routers, switches, PCs, servidores e telefones VoIP, assegurando a comunicação interna de cada edifício e a sua ligação ao backbone do campus.
+>Each simulation included the introduction and configuration of routers, switches, PCs, servers, and VoIP phones, ensuring internal communication within each building and its connection to the campus backbone.
 
->Além disso, cada simulação individual foi posteriormente integrada numa simulação conjunta, representando a topologia geral do campus de forma coesa e funcional.
+>Additionally, each individual simulation was later integrated into a joint simulation, representing the overall campus topology in a cohesive and functional manner.
 
->Todas as subtarefas atribuídas a cada membro foram totalmente implementadas sem quaisquer problemas técnicos, refletindo uma boa organização do grupo e um elevado grau de cooperação.
+>All subtasks assigned to each member were fully implemented without any technical issues, reflecting good group organization and a high degree of cooperation.
 
 <br>
 
-## 3. Avaliação de subtarefas
+## 3. Subtask Evaluation
 
 
 - ### 🏢 1230543 (Building 1):
 
-| **Tarefa** | **Estado/Situação**                    |
-|:----------:|----------------------------------------|
-| **2.1.1**  | Totalmente implementado sem problemas. |
-| **2.1.2**  | Totalmente implementado sem problemas. |
-| **2.1.3**  | Totalmente implementado sem problemas. |
-| **2.1.4**  | Totalmente implementado sem problemas. |
-| **2.1.5**  | Totalmente implementado sem problemas. |
-| **2.1.6**  | Totalmente implementado sem problemas. |
-| **2.1.7**  | Totalmente implementado sem problemas. |
-| **2.1.8**  | Totalmente implementado sem problemas. |
-| **2.1.9**  | Totalmente implementado sem problemas. |
-| **2.1.10** | Totalmente implementado sem problemas. |
-| **2.1.11** | Totalmente implementado sem problemas. |
-| **2.1.12** | Totalmente implementado sem problemas. |
-| **2.1.13** | Totalmente implementado sem problemas. |
-| **2.1.14** | Totalmente implementado sem problemas. |
-| **2.1.15** | Totalmente implementado sem problemas. |
+|  **Task**  | **Status/Situation**              |
+|:----------:|-----------------------------------|
+| **2.1.1**  | Fully implemented without issues. |
+| **2.1.2**  | Fully implemented without issues. |
+| **2.1.3**  | Fully implemented without issues. |
+| **2.1.4**  | Fully implemented without issues. |
+| **2.1.5**  | Fully implemented without issues. |
+| **2.1.6**  | Fully implemented without issues. |
+| **2.1.7**  | Fully implemented without issues. |
+| **2.1.8**  | Fully implemented without issues. |
+| **2.1.9**  | Fully implemented without issues. |
+| **2.1.10** | Fully implemented without issues. |
+| **2.1.11** | Fully implemented without issues. |
+| **2.1.12** | Fully implemented without issues. |
+| **2.1.13** | Fully implemented without issues. |
+| **2.1.14** | Fully implemented without issues. |
+| **2.1.15** | Fully implemented without issues. |
 <br>
 
 - ### 🏢 1230487 (Building 2):
 
-| **Tarefa** | **Estado/Situação**                    |
-|:----------:|----------------------------------------|
-| **2.2.1**  | Totalmente implementado sem problemas. |
-| **2.2.2**  | Totalmente implementado sem problemas. |
-| **2.2.3**  | Totalmente implementado sem problemas. |
-| **2.2.4**  | Totalmente implementado sem problemas. |
-| **2.2.5**  | Totalmente implementado sem problemas. |
-| **2.2.6**  | Totalmente implementado sem problemas. |
-| **2.2.7**  | Totalmente implementado sem problemas. |
-| **2.2.8**  | Totalmente implementado sem problemas. |
-| **2.2.9**  | Totalmente implementado sem problemas. |
-| **2.2.10** | Totalmente implementado sem problemas. |
-| **2.2.11** | Totalmente implementado sem problemas. |
-| **2.2.12** | Totalmente implementado sem problemas. |
-| **2.2.13** | Totalmente implementado sem problemas. |
-| **2.2.14** | Totalmente implementado sem problemas. |
-| **2.2.15** | Totalmente implementado sem problemas. |
+|  **Task**  | **Status/Situation**              |
+|:----------:|-----------------------------------|
+| **2.2.1**  | Fully implemented without issues. |
+| **2.2.2**  | Fully implemented without issues. |
+| **2.2.3**  | Fully implemented without issues. |
+| **2.2.4**  | Fully implemented without issues. |
+| **2.2.5**  | Fully implemented without issues. |
+| **2.2.6**  | Fully implemented without issues. |
+| **2.2.7**  | Fully implemented without issues. |
+| **2.2.8**  | Fully implemented without issues. |
+| **2.2.9**  | Fully implemented without issues. |
+| **2.2.10** | Fully implemented without issues. |
+| **2.2.11** | Fully implemented without issues. |
+| **2.2.12** | Fully implemented without issues. |
+| **2.2.13** | Fully implemented without issues. |
+| **2.2.14** | Fully implemented without issues. |
+| **2.2.15** | Fully implemented without issues. |
 <br>
 
 - ### 🏢 1230544 (Building 3):
 
-| **Tarefa** | **Estado/Situação**                    |
-|:----------:|----------------------------------------|
-| **2.3.1**  | Totalmente implementado sem problemas. |
-| **2.3.2**  | Totalmente implementado sem problemas. |
-| **2.3.3**  | Totalmente implementado sem problemas. |
-| **2.3.4**  | Totalmente implementado sem problemas. |
-| **2.3.5**  | Totalmente implementado sem problemas. |
-| **2.3.6**  | Totalmente implementado sem problemas. |
-| **2.3.7**  | Totalmente implementado sem problemas. |
-| **2.3.8**  | Totalmente implementado sem problemas. |
-| **2.3.9**  | Totalmente implementado sem problemas. |
-| **2.3.10** | Totalmente implementado sem problemas. |
-| **2.3.11** | Totalmente implementado sem problemas. |
-| **2.3.12** | Totalmente implementado sem problemas. |
-| **2.3.13** | Totalmente implementado sem problemas. |
-| **2.3.14** | Totalmente implementado sem problemas. |
-| **2.3.15** | Totalmente implementado sem problemas. |
+|  **Task**  | **Status/Situation**              |
+|:----------:|-----------------------------------|
+| **2.3.1**  | Fully implemented without issues. |
+| **2.3.2**  | Fully implemented without issues. |
+| **2.3.3**  | Fully implemented without issues. |
+| **2.3.4**  | Fully implemented without issues. |
+| **2.3.5**  | Fully implemented without issues. |
+| **2.3.6**  | Fully implemented without issues. |
+| **2.3.7**  | Fully implemented without issues. |
+| **2.3.8**  | Fully implemented without issues. |
+| **2.3.9**  | Fully implemented without issues. |
+| **2.3.10** | Fully implemented without issues. |
+| **2.3.11** | Fully implemented without issues. |
+| **2.3.12** | Fully implemented without issues. |
+| **2.3.13** | Fully implemented without issues. |
+| **2.3.14** | Fully implemented without issues. |
+| **2.3.15** | Fully implemented without issues. |
 <br>
 
 - ### 🏢 1231046 (Building 4):
 
-| **Tarefa** | **Estado/Situação**                    |
-|:----------:|----------------------------------------|
-| **2.4.1**  | Totalmente implementado sem problemas. |
-| **2.4.2**  | Totalmente implementado sem problemas. |
-| **2.4.3**  | Totalmente implementado sem problemas. |
-| **2.4.4**  | Totalmente implementado sem problemas. |
-| **2.4.5**  | Totalmente implementado sem problemas. |
-| **2.4.6**  | Totalmente implementado sem problemas. |
-| **2.4.7**  | Totalmente implementado sem problemas. |
-| **2.4.8**  | Totalmente implementado sem problemas. |
-| **2.4.9**  | Totalmente implementado sem problemas. |
-| **2.4.10** | Totalmente implementado sem problemas. |
-| **2.4.11** | Totalmente implementado sem problemas. |
-| **2.4.12** | Totalmente implementado sem problemas. |
-| **2.4.13** | Totalmente implementado sem problemas. |
-| **2.4.14** | Totalmente implementado sem problemas. |
-| **2.4.15** | Totalmente implementado sem problemas. |
-
-
+|  **Task**  | **Status/Situation**              |
+|:----------:|-----------------------------------|
+| **2.4.1**  | Fully implemented without issues. |
+| **2.4.2**  | Fully implemented without issues. |
+| **2.4.3**  | Fully implemented without issues. |
+| **2.4.4**  | Fully implemented without issues. |
+| **2.4.5**  | Fully implemented without issues. |
+| **2.4.6**  | Fully implemented without issues. |
+| **2.4.7**  | Fully implemented without issues. |
+| **2.4.8**  | Fully implemented without issues. |
+| **2.4.9**  | Fully implemented without issues. |
+| **2.4.10** | Fully implemented without issues. |
+| **2.4.11** | Fully implemented without issues. |
+| **2.4.12** | Fully implemented without issues. |
+| **2.4.13** | Fully implemented without issues. |
+| **2.4.14** | Fully implemented without issues. |
+| **2.4.15** | Fully implemented without issues. |

@@ -1,94 +1,94 @@
 # 📚 Planning
 
-## 👨‍💻 Alunos
+## 👨‍💻 Students
 
-| **Nome**               | **Building** |
-|------------------------|:------------:|
-| Igor (1230543)         |      1       |
-| David (1230487)        |      2       |
-| Rafael (1230544)       |      3       |
-| Daniel (1231046)       |      4       |
-
----
-
-## 📌 Atribuição de Tarefas
-
-| **Tarefa** | **Descrição da tarefa**                                                                                                                                                                                                                                                     |  **Aluno**  |
-|:----------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
-|  **3.1**   | Atualizar a simulação Packet Tracer (building1.pkt) de camada 3 do sprint anterior, para incluir as funcionalidades descritas neste sprint para o edifício um.                                                                                                              | **1230543** |
-|  **3.2**   | Atualizar a simulação Packet Tracer (building2.pkt) de camada 3 do sprint anterior, para incluir as funcionalidades descritas neste sprint para o edifício dois. Integração final das simulações Packet Tracer de cada membro num único ficheiro de simulação (campus.pkt). | **1230487** |
-|  **3.3**   | Atualizar a simulação Packet Tracer (building3.pkt) de camada 3 do sprint anterior, para incluir as funcionalidades descritas neste sprint para o edifício três.                                                                                                            | **1230544** |
-|  **3.4**   | Atualizar a simulação Packet Tracer (building4.pkt) de camada 3 do sprint anterior, para incluir as funcionalidades descritas neste sprint para o edifício quatro.                                                                                                          | **1231046** |
+| **Name**                 | **Building** |
+|--------------------------|:------------:|
+| Igor Coutinho (1230543)  |      1       |
+| David Vieira (1230487)   |      2       |
+| Rafael Barbosa (1230544) |      3       |
+| Daniel Silva (1231046)   |      4       |
 
 ---
 
-## 🧩 Subtarefas por Edifício
+## 📌 Task Assignment
 
-> Cada edifício segue um plano muito semelhante. Para maior clareza, as subtarefas estão organizadas em secções e detalhadas no conteúdo completo abaixo.
+| **Task** | **Task Description**                                                                                                                                                                                                                                                | **Student** |
+|:--------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
+| **3.1**  | Update the Packet Tracer simulation (building1.pkt) from the previous sprint's Layer 3, to include the features described in this sprint for building one.                                                                                                          | **1230543** |
+| **3.2**  | Update the Packet Tracer simulation (building2.pkt) from the previous sprint's Layer 3, to include the features described in this sprint for building two. Final integration of each member's Packet Tracer simulations into a single simulation file (campus.pkt). | **1230487** |
+| **3.3**  | Update the Packet Tracer simulation (building3.pkt) from the previous sprint's Layer 3, to include the features described in this sprint for building three.                                                                                                        | **1230544** |
+| **3.4**  | Update the Packet Tracer simulation (building4.pkt) from the previous sprint's Layer 3, to include the features described in this sprint for building four.                                                                                                         | **1231046** |
+
+---
+
+## 🧩 Subtasks by Building
+
+> Each building follows a very similar plan. For greater clarity, the subtasks are organized into sections and detailed in the full content below.
 
 - ### 🏢 Building 1
 
-|  **Tarefa**  | **Descrição da tarefa**                                                                                        |
-|:------------:|----------------------------------------------------------------------------------------------------------------|
-| OSPF Routing | Configurar OSPF com área dedicada ao edifício e incluir a rota por omissão (default-information originate).    |
-| HTTP Server  | Adicionar segundo servidor HTTP/HTTPS na DMZ com IP estático e página HTML que identifique o edifício.         |
-|    DHCPv4    | Configurar DHCPv4 para todas as VLANs exceto DMZ e backbone; incluir a opção 150 para VoIP.                    |
-|     VoIP     | Configurar serviço de VoIP com dois telefones IP modelo 7960 e VLAN de voz nos switches.                       |
-|     DNS      | Criar domínio principal, configurar servidor DNS. Conhecer IPs dos servidores dos subdomínios (buildings 2-4). |
-|   Firewall   | Configurar firewall para bloquear tráfego indesejado.                                                          |
+|   **Task**   | **Task Description**                                                                                                 |
+|:------------:|----------------------------------------------------------------------------------------------------------------------|
+| OSPF Routing | Configure OSPF with a dedicated area for the building and include the default route (default-information originate). |
+| HTTP Server  | Add a second HTTP/HTTPS server in the DMZ with a static IP and an HTML page identifying the building.                |
+|    DHCPv4    | Configure DHCPv4 for all VLANs except DMZ and backbone; include option 150 for VoIP.                                 |
+|     VoIP     | Configure VoIP service with two IP phones model 7960 and voice VLANs on the switches.                                |
+|     DNS      | Create the main domain, configure the DNS server. Know the IPs of the subdomain servers (buildings 2-4).             |
+|   Firewall   | Configure the firewall to block unwanted traffic.                                                                    |
 
 <br>
 
 - ### 🏢 Building 2
 
-|  **Tarefa**  | **Descrição da tarefa**                                                                                |
-|:------------:|--------------------------------------------------------------------------------------------------------|
-| OSPF Routing | Configurar OSPF com área própria para o edifício.                                                      |
-| HTTP Server  | Adicionar segundo servidor HTTP/HTTPS na DMZ com IP estático e página HTML que identifique o edifício. |
-|    DHCPv4    | Configurar DHCPv4 para todas as VLANs exceto DMZ e backbone; incluir a opção 150 para VoIP.            |
-|     VoIP     | Configurar serviço de VoIP com dois telefones IP modelo 7960 e VLAN de voz nos switches.               |
-|     DNS      | Criar subdomínio, configurar servidor DNS. Conhecer IP do servidor DNS de building 1.                  |
-|   Firewall   | Configurar firewall para bloquear tráfego indesejado.                                                  |
+|   **Task**   | **Task Description**                                                                                  |
+|:------------:|-------------------------------------------------------------------------------------------------------|
+| OSPF Routing | Configure OSPF with a dedicated area for the building.                                                |
+| HTTP Server  | Add a second HTTP/HTTPS server in the DMZ with a static IP and an HTML page identifying the building. |
+|    DHCPv4    | Configure DHCPv4 for all VLANs except DMZ and backbone; include option 150 for VoIP.                  |
+|     VoIP     | Configure VoIP service with two IP phones model 7960 and voice VLANs on the switches.                 |
+|     DNS      | Create subdomain, configure DNS server. Know the IP of the DNS server of building 1.                  |
+|   Firewall   | Configure the firewall to block unwanted traffic.                                                     |
 
 <br>
 
 - ### 🏢 Building 3
 
-|  **Tarefa**  | **Descrição da tarefa**                                                                                |
-|:------------:|--------------------------------------------------------------------------------------------------------|
-| OSPF Routing | Configurar OSPF com área própria para o edifício.                                                      |
-| HTTP Server  | Adicionar segundo servidor HTTP/HTTPS na DMZ com IP estático e página HTML que identifique o edifício. |
-|    DHCPv4    | Configurar DHCPv4 para todas as VLANs exceto DMZ e backbone; incluir a opção 150 para VoIP.            |
-|     VoIP     | Configurar serviço de VoIP com dois telefones IP modelo 7960 e VLAN de voz nos switches.               |
-|     DNS      | Criar subdomínio, configurar servidor DNS. Conhecer IP do servidor DNS de building 1.                  |
-|   Firewall   | Configurar firewall para bloquear tráfego indesejado.                                                  |
+|   **Task**   | **Task Description**                                                                                  |
+|:------------:|-------------------------------------------------------------------------------------------------------|
+| OSPF Routing | Configure OSPF with a dedicated area for the building.                                                |
+| HTTP Server  | Add a second HTTP/HTTPS server in the DMZ with a static IP and an HTML page identifying the building. |
+|    DHCPv4    | Configure DHCPv4 for all VLANs except DMZ and backbone; include option 150 for VoIP.                  |
+|     VoIP     | Configure VoIP service with two IP phones model 7960 and voice VLANs on the switches.                 |
+|     DNS      | Create subdomain, configure DNS server. Know the IP of the DNS server of building 1.                  |
+|   Firewall   | Configure the firewall to block unwanted traffic.                                                     |
 
 <br>
 
 - ### 🏢 Building 4
 
-|  **Tarefa**  | **Descrição da tarefa**                                                                                |
-|:------------:|--------------------------------------------------------------------------------------------------------|
-| OSPF Routing | Configurar OSPF com área própria para o edifício.                                                      |
-| HTTP Server  | Adicionar segundo servidor HTTP/HTTPS na DMZ com IP estático e página HTML que identifique o edifício. |
-|    DHCPv4    | Configurar DHCPv4 para todas as VLANs exceto DMZ e backbone; incluir a opção 150 para VoIP.            |
-|     VoIP     | Configurar serviço de VoIP com dois telefones IP modelo 7960 e VLAN de voz nos switches.               |
-|     DNS      | Criar subdomínio, configurar servidor DNS. Conhecer IP do servidor DNS de building 1.                  |
-|   Firewall   | Configurar firewall para bloquear tráfego indesejado.                                                  |
+|   **Task**   | **Task Description**                                                                                  |
+|:------------:|-------------------------------------------------------------------------------------------------------|
+| OSPF Routing | Configure OSPF with a dedicated area for the building.                                                |
+| HTTP Server  | Add a second HTTP/HTTPS server in the DMZ with a static IP and an HTML page identifying the building. |
+|    DHCPv4    | Configure DHCPv4 for all VLANs except DMZ and backbone; include option 150 for VoIP.                  |
+|     VoIP     | Configure VoIP service with two IP phones model 7960 and voice VLANs on the switches.                 |
+|     DNS      | Create subdomain, configure DNS server. Know the IP of the DNS server of building 1.                  |
+|   Firewall   | Configure the firewall to block unwanted traffic.                                                     |
 
 ---
 
-## ⚙️ Decisões Técnicas
+## ⚙️ Technical Decisions
 
 - **Packet Tracer:**
-    - versão 8.2.2
+    - version 8.2.2
 
 
-- **Domínio VTP:**
+- **VTP Domain:**
     - `r2425ddg2`
 
 
-- **Nomenclatura dos dispositivos:**
+- **Device Naming:**
     - `Building_Device_Floor` (ex: `B2_PC_F0`)
     - `Building_Device_Number` (ex: `B2_Laptop_1`)
 
@@ -97,18 +97,18 @@
     - 362 – 383
 
 
-- **Modelo de router:**
+- **Router Model:**
     - 2811
 
 ---
 
-## 🗂️ Base de Dados de VLANs
+## 🗂️ VLAN Database
 
 
-> Tabela com 21 VLANs dos edifícios + Backbone (ID 362 a 382) definidos, com nomes e descrições para cada tipo de tráfego:
+> Table with 21 VLANs of the buildings + Backbone (ID 362 to 382) defined, with names and descriptions for each type of traffic:
 
 
-| VLAN ID | nome VLAN       | descrição VLAN                                                |
+| VLAN ID | name VLAN       | description VLAN                                              |
 |---------|-----------------|---------------------------------------------------------------|
 | 362     | B1_floor0       | Building 1 - Floor 0 (outlets)                                |
 | 363     | B1_floor1       | Building 1 - Floor 1 (outlets)                                |
@@ -134,83 +134,83 @@
 
 ---
 
-## 🏗️ Endereços IP das Interfaces dos Routers na Rede Backbone do Campus (VLAN 382)
+## 🏗️ IP Addresses of Router Interfaces in the Campus Backbone Network (VLAN 382)
 
-Para assegurar a conectividade entre os edifícios, foi estabelecido que cada router recebesse um endereço IP 
-na VLAN 382 (Backbone). Estes endereços suportam a comunicação entre routers e o encaminhamento de tráfego entre as diferentes áreas OSPF.
+To ensure connectivity between the buildings, it was established that each router would receive an IP address 
+in VLAN 382 (Backbone). These addresses support communication between routers and traffic forwarding between different OSPF areas.
 
 
-| Edifício   | Router | Endereço IP na VLAN 382 |
-|------------|--------|-------------------------|
-| Edifício 1 | R1     | 10.22.97.1              |
-| Edifício 2 | R2     | 10.22.97.3              |
-| Edifício 3 | R3     | 10.22.97.4              |
-| Edifício 4 | R4     | 10.22.97.5              |
+| Building   | Router | IP Address in VLAN 382 |
+|------------|--------|------------------------|
+| Building 1 | R1     | 10.22.97.1             |
+| Building 2 | R2     | 10.22.97.3             |
+| Building 3 | R3     | 10.22.97.4             |
+| Building 4 | R4     | 10.22.97.5             |
 
 ---
 
 
-## 🏠 Definição do Domínio OSPF no Campus
+## 🏠 Definition of the OSPF Domain in the Campus
 
 
-### Definir o Domínio OSPF (Autonomous System):
+### Define the OSPF Domain (Autonomous System):
 
-Tal como foi pedido no enunciado deste sprint, a nova infraestrutura funcionará como um único 
-domínio OSPF, considerado um único sistema autónomo pelos restantes protocolos de encaminhamento.
-
-
-### Tabela: Definição das Áreas OSPF no Campus
-
-Conforme estabelecido na reunião de planeamento, as áreas OSPF foram distribuídas da seguinte forma:
-
-| Edifício       | Função na Rede OSPF         | ID da Área OSPF (Decimal) | ID da Área OSPF (Ponto-decimal) |
-|----------------|-----------------------------|---------------------------|---------------------------------|
-| **Backbone**   | Área Principal (*Backbone*) | 0                         | 0.0.0.0                         |
-| **Edifício 1** | Área de Rede Local          | 1                         | 0.0.0.1                         |
-| **Edifício 2** | Área de Rede Local          | 2                         | 0.0.0.2                         |
-| **Edifício 3** | Área de Rede Local          | 3                         | 0.0.0.3                         |
-| **Edifício 4** | Área de Rede Local          | 4                         | 0.0.0.4                         |
+As requested in the statement of this sprint, the new infrastructure will operate as a single 
+OSPF domain, considered a single autonomous system by the other routing protocols.
 
 
-### Definição dos Router-IDs OSPF do Campus
+### Table: Definition of OSPF Areas in the Campus
 
-| **Edifício**              | **Router-ID (IPv4)** |
+As established in the planning meeting, the OSPF areas were distributed as follows:
+
+| Building       | Role in the OSPF Network | OSPF Area ID (Decimal) | OSPF Area ID (Dot-decimal) |
+|----------------|--------------------------|------------------------|----------------------------|
+| **Backbone**   | Main Area (*Backbone*)   | 0                      | 0.0.0.0                    |
+| **Building 1** | Local Network Area       | 1                      | 0.0.0.1                    |
+| **Building 2** | Local Network Area       | 2                      | 0.0.0.2                    |
+| **Building 3** | Local Network Area       | 3                      | 0.0.0.3                    |
+| **Building 4** | Local Network Area       | 4                      | 0.0.0.4                    |
+
+
+### Definition of the OSPF Router IDs in the Campus
+
+| **Building**              | **Router-ID (IPv4)** |
 |---------------------------|----------------------|
-| **Edifício 1 (Backbone)** | 1.1.1.1              |
-| **Edifício 2**            | 2.2.2.2              |
-| **Edifício 3**            | 3.3.3.3              |
-| **Edifício 4**            | 4.4.4.4              |
+| **Building 1 (Backbone)** | 1.1.1.1              |
+| **Building 2**            | 2.2.2.2              |
+| **Building 3**            | 3.3.3.3              |
+| **Building 4**            | 4.4.4.4              |
 
-**Nota:** O router do Edifício 1 introduzirá a rota por omissão 
-no OSPF (comando `default-information originate`).
+**Note:** The router in Building 1 will introduce the default route 
+into OSPF (command `default-information originate`).
 
 
-### Configuração de Áreas OSPF e Endereços IPv4 por Edifício
+### Configuration of OSPF Areas and IPv4 Addresses by Building
 
-| Edifício       | Rede / Interface             | Endereço de Rede | Netmask         | Wildcard Mask   | Área OSPF |
-|----------------|------------------------------|------------------|-----------------|-----------------|-----------|
-| **Backbone**   | Backbone entre routers       | 10.22.97.0       | 255.255.255.0   | 0.0.0.255       | 0         |
-|                | Ligação à Internet           | 87.5.127.92      | 255.255.255.252 | 0.0.0.3         | 0         |
-| **Edifício 1** | F0 (VLAN 362)                | 10.22.98.0       | 255.255.255.192 | 0.0.0.63        | 1         |
-|                | F1 (VLAN 363)                | 10.22.98.64      | 255.255.255.192 | 0.0.0.63        | 1         |
-|                | WIFI (VLAN 364)              | 10.22.98.128     | 255.255.255.128 | 0.0.0.127       | 1         |
-|                | VoIP (VLAN 366)              | 10.22.99.0       | 255.255.255.128 | 0.0.0.127       | 1         |
-|                | DMZ (VLAN 365)               | 10.22.99.128     | 255.255.255.128 | 0.0.0.127       | 1         |
-| **Edifício 2** | WIFI (VLAN 369)              | 10.22.100.0      | 255.255.255.0   | 0.0.0.255       | 2         |
-|                | F0 (VLAN 367)                | 10.22.101.0      | 255.255.255.128 | 0.0.0.127       | 2         |
-|                | F1 (VLAN 368)                | 10.22.101.128    | 255.255.255.128 | 0.0.0.127       | 2         |
-|                | VoIP (VLAN 371)              | 10.22.102.0      | 255.255.255.128 | 0.0.0.127       | 2         |
-|                | DMZ (VLAN 370)               | 10.22.102.128    | 255.255.255.192 | 0.0.0.63        | 2         |
-| **Edifício 3** | WIFI (VLAN 374)              | 10.22.104.0      | 255.255.255.0   | 0.0.0.255       | 3         |
-|                | VoIP (VLAN 376)              | 10.22.105.0      | 255.255.255.0   | 0.0.0.255       | 3         |
-|                | F1 (VLAN 373)                | 10.22.106.0      | 255.255.255.0   | 0.0.0.255       | 3         |
-|                | F0 (VLAN 372)                | 10.22.107.0      | 255.255.255.128 | 0.0.0.127       | 3         |
-|                | DMZ (VLAN 375)               | 10.22.107.128    | 255.255.255.192 | 0.0.0.63        | 3         |
-| **Edifício 4** | WIFI (VLAN 379)              | 10.22.108.0      | 255.255.255.0   | 0.0.0.255       | 4         |
-|                | VoIP (VLAN 381)              | 10.22.109.0      | 255.255.255.0   | 0.0.0.255       | 4         |
-|                | F1 (VLAN 378)                | 10.22.110.0      | 255.255.255.0   | 0.0.0.255       | 4         |
-|                | F0 (VLAN 377)                | 10.22.111.0      | 255.255.255.128 | 0.0.0.127       | 4         |
-|                | DMZ (VLAN 380)               | 10.22.111.128    | 255.255.255.192 | 0.0.0.63        | 4         |
+| Building       | Network / Interface      | Network Address | Netmask         | Wildcard Mask | OSPF Area |
+|----------------|--------------------------|-----------------|-----------------|---------------|-----------|
+| **Backbone**   | Backbone between routers | 10.22.97.0      | 255.255.255.0   | 0.0.0.255     | 0         |
+|                | Internet Connection      | 87.5.127.92     | 255.255.255.252 | 0.0.0.3       | 0         |
+| **Building 1** | F0 (VLAN 362)            | 10.22.98.0      | 255.255.255.192 | 0.0.0.63      | 1         |
+|                | F1 (VLAN 363)            | 10.22.98.64     | 255.255.255.192 | 0.0.0.63      | 1         |
+|                | WIFI (VLAN 364)          | 10.22.98.128    | 255.255.255.128 | 0.0.0.127     | 1         |
+|                | VoIP (VLAN 366)          | 10.22.99.0      | 255.255.255.128 | 0.0.0.127     | 1         |
+|                | DMZ (VLAN 365)           | 10.22.99.128    | 255.255.255.128 | 0.0.0.127     | 1         |
+| **Building 2** | WIFI (VLAN 369)          | 10.22.100.0     | 255.255.255.0   | 0.0.0.255     | 2         |
+|                | F0 (VLAN 367)            | 10.22.101.0     | 255.255.255.128 | 0.0.0.127     | 2         |
+|                | F1 (VLAN 368)            | 10.22.101.128   | 255.255.255.128 | 0.0.0.127     | 2         |
+|                | VoIP (VLAN 371)          | 10.22.102.0     | 255.255.255.128 | 0.0.0.127     | 2         |
+|                | DMZ (VLAN 370)           | 10.22.102.128   | 255.255.255.192 | 0.0.0.63      | 2         |
+| **Building 3** | WIFI (VLAN 374)          | 10.22.104.0     | 255.255.255.0   | 0.0.0.255     | 3         |
+|                | VoIP (VLAN 376)          | 10.22.105.0     | 255.255.255.0   | 0.0.0.255     | 3         |
+|                | F1 (VLAN 373)            | 10.22.106.0     | 255.255.255.0   | 0.0.0.255     | 3         |
+|                | F0 (VLAN 372)            | 10.22.107.0     | 255.255.255.128 | 0.0.0.127     | 3         |
+|                | DMZ (VLAN 375)           | 10.22.107.128   | 255.255.255.192 | 0.0.0.63      | 3         |
+| **Building 4** | WIFI (VLAN 379)          | 10.22.108.0     | 255.255.255.0   | 0.0.0.255     | 4         |
+|                | VoIP (VLAN 381)          | 10.22.109.0     | 255.255.255.0   | 0.0.0.255     | 4         |
+|                | F1 (VLAN 378)            | 10.22.110.0     | 255.255.255.0   | 0.0.0.255     | 4         |
+|                | F0 (VLAN 377)            | 10.22.111.0     | 255.255.255.128 | 0.0.0.127     | 4         |
+|                | DMZ (VLAN 380)           | 10.22.111.128   | 255.255.255.192 | 0.0.0.63      | 4         |
 
 ---
 
@@ -218,7 +218,7 @@ no OSPF (comando `default-information originate`).
 ## 🖥️ DHCPv4 Service
 
 
-### 🏢 Configuração DHCP - Building 1
+### 🏢 DHCP Configuration - Building 1
 
 | DHCP Pool | Subnet       | Netmask         | Default Router | Excluded Addresses                         | DHCP Options            | VLAN |
 |-----------|--------------|-----------------|----------------|--------------------------------------------|-------------------------|------|
@@ -228,7 +228,7 @@ no OSPF (comando `default-information originate`).
 | VOIP_B1   | 10.22.99.0   | 255.255.255.128 | 10.22.99.1     | 10.22.99.1 - 10.22.99.10, 10.22.99.100     | Option 150: 10.22.99.1  | VoIP |
 
 
-### 🏢 Configuração DHCP- Building 2
+### 🏢 DHCP Configuration- Building 2
 
 | DHCP Pool | Subnet        | Netmask         | Default Router | Excluded Addresses                        | DHCP Options            | VLAN |
 |-----------|---------------|-----------------|----------------|-------------------------------------------|-------------------------|------|
@@ -238,7 +238,7 @@ no OSPF (comando `default-information originate`).
 | VOIP_B2   | 10.22.102.0   | 255.255.255.128 | 10.22.102.1    | 10.22.102.1 - 10.22.102.10, 10.22.102.100 | Option 150: 10.22.102.1 | VoIP |
 
 
-### 🏢 Configuração DHCP - Building 3
+### 🏢 DHCP Configuration - Building 3
 
 | DHCP Pool | Subnet        | Netmask         | Default Router | Excluded Addresses                        | DHCP Options            | VLAN |
 |-----------|---------------|-----------------|----------------|-------------------------------------------|-------------------------|------|
@@ -248,7 +248,7 @@ no OSPF (comando `default-information originate`).
 | F0_B3     | 10.22.107.0   | 255.255.255.128 | 10.22.107.1    | 10.22.107.1 - 10.22.107.10                | None                    | F0   |
 
 
-### 🏢 Configuração DHCP - Building 4
+### 🏢 DHCP Configuration - Building 4
 
 | DHCP Pool | Subnet        | Netmask         | Default Router | Excluded Addresses                        | DHCP Options            | VLAN |
 |-----------|---------------|-----------------|----------------|-------------------------------------------|-------------------------|------|
@@ -263,29 +263,29 @@ no OSPF (comando `default-information originate`).
 
 ## ☎️ VoIP service
 
-Cada edifício disponibiliza o serviço VoIP local com telefones IP Cisco (modelo 7960) ligados à rede interna. Este serviço permite:
+Each building provides the local VoIP service with Cisco IP phones (model 7960) connected to the internal network. This service allows:
 
-- Chamadas internas dentro do mesmo edifício.
+- Internal calls within the same building.
 
-- Encaminhamento (forwarding) de chamadas entre edifícios através da ligação VoIP entre routers.
+- Call forwarding between buildings through the VoIP link between routers.
 
-- Configuração correta das VLANs nos switches para separar o tráfego de voz do tráfego de dados.
+- Correct configuration of VLANs on switches to separate voice traffic from data traffic.
 
-- Configuração DHCP com a opção 150 a apontar para o IP do router local (servidor TFTP) para distribuição das configurações dos telefones.
-
-
-### Prefixos Telefónicos, Dial-Peers e IP dos Routers por Edifício
-
-| Edifício   | Dial-Peer (voice X voip) | Prefixo Telefónico | IP do Router (VLAN VoIP) |
-|------------|--------------------------|--------------------|--------------------------|
-| Building 1 | 1                        | 1xxx               | 10.22.99.1               |
-| Building 2 | 2                        | 2xxx               | 10.22.102.1              |
-| Building 3 | 3                        | 3xxx               | 10.22.105.1              |
-| Building 4 | 4                        | 4xxx               | 10.22.109.1              |
+- DHCP configuration with option 150 pointing to the IP of the local router (TFTP server) for phone configuration distribution.
 
 
-**Dial-Peers para Chamadas Inter-Edifícios:** Cada router incluirá dial-peers para encaminhar chamadas a prefixos de outros edifícios para 
-o IP do router correspondente. Por exemplo, chamadas para prefixos que começam por **3**... são encaminhadas para o **IP 10.22.105.1**.
+### Telephone Prefixes, Dial-Peers, and Router IPs by Building
+
+| Building   | Dial-Peer (voice X voip) | Telephone Prefix | Router IP (VoIP VLAN) |
+|------------|--------------------------|------------------|-----------------------|
+| Building 1 | 1                        | 1xxx             | 10.22.99.1            |
+| Building 2 | 2                        | 2xxx             | 10.22.102.1           |
+| Building 3 | 3                        | 3xxx             | 10.22.105.1           |
+| Building 4 | 4                        | 4xxx             | 10.22.109.1           |
+
+
+**Dial-Peers for Inter-Building Calls:** Each router will include dial-peers to forward calls to other buildings' prefixes to 
+the IP of the corresponding router. For example, calls to prefixes starting with **3**... are forwarded to **IP 10.22.105.1**.
 
 
 ---
@@ -293,46 +293,46 @@ o IP do router correspondente. Por exemplo, chamadas para prefixos que começam 
 
 ## 🌐 DNS
 
-A arquitetura DNS definida para o projeto estabelece uma hierarquia de domínios baseada nos edifícios:
+The DNS architecture defined for the project establishes a hierarchy of domains based on the buildings:
 
-- Domínio de topo: `rcomp-24-25-dd-g2`, alojado no Building 1.
+- Top-level domain: `rcomp-24-25-dd-g2`, hosted in Building 1.
 
-- Subdomínios: `building-X.rcomp-24-25-dd-g2`, onde X representa o número do edifício (2, 3 ou 4).
+- Subdomains: `building-X.rcomp-24-25-dd-g2`, where X represents the building number (2, 3, or 4).
 
-- Cada edifício utiliza o servidor na sua DMZ como servidor DNS autoritativo para o respetivo domínio.
+- Each building uses the server in its DMZ as the authoritative DNS server for its respective domain.
 
-- Todos os nomes definidos nas bases de dados DNS são FQDN, terminando em rcomp-24-25-dd-g2.
-
-
-### 📛 Nomes dos Servidores DNS
-
-Todos os servidores DNS têm o nome não qualificado ns. Assim, o FQDN de cada servidor é:
-
-| Edifício   | Domínio                      | FQDN do Servidor DNS            | IP do Servidor DNS | IP do Servidor HTTP |
-|------------|------------------------------|---------------------------------|--------------------|---------------------|
-| Building 1 | rcomp-24-25-dd-g2            | ns.rcomp-24-25-dd-g2            | `10.22.99.130`     | `10.22.99.131`      |
-| Building 2 | building-2.rcomp-24-25-dd-g2 | ns.building-2.rcomp-24-25-dd-g2 | `10.22.102.130`    | `10.22.102.131`     |
-| Building 3 | building-3.rcomp-24-25-dd-g2 | ns.building-3.rcomp-24-25-dd-g2 | `10.22.107.130`    | `10.22.107.131`     |
-| Building 4 | building-4.rcomp-24-25-dd-g2 | ns.building-4.rcomp-24-25-dd-g2 | `10.22.111.130`    | `10.22.111.131`     |
+- All names defined in the DNS databases are FQDN, ending in rcomp-24-25-dd-g2.
 
 
-### 🌳 Estrutura de Delegação e Glue Records
+### 📛 DNS Server Names
 
-- O servidor DNS do domínio rcomp-24-25-dd-g2 (Building 1) conhece os IPs dos servidores DNS dos subdomínios (buildings 2, 3 e 4).
+All DNS servers are named ns. Thus, the FQDN of each server is:
 
-- Os servidores DNS dos outros edifícios conhecem o IP do servidor DNS do domínio de topo.
+| Building   | Domain                       | DNS Server FQDN                 | DNS Server IP   | HTTP Server IP  |
+|------------|------------------------------|---------------------------------|-----------------|-----------------|
+| Building 1 | rcomp-24-25-dd-g2            | ns.rcomp-24-25-dd-g2            | `10.22.99.130`  | `10.22.99.131`  |
+| Building 2 | building-2.rcomp-24-25-dd-g2 | ns.building-2.rcomp-24-25-dd-g2 | `10.22.102.130` | `10.22.102.131` |
+| Building 3 | building-3.rcomp-24-25-dd-g2 | ns.building-3.rcomp-24-25-dd-g2 | `10.22.107.130` | `10.22.107.131` |
+| Building 4 | building-4.rcomp-24-25-dd-g2 | ns.building-4.rcomp-24-25-dd-g2 | `10.22.111.130` | `10.22.111.131` |
 
-- Cada delegação inclui:
 
-  - Um registo NS (Name Server) que aponta para o FQDN do servidor autoritativo.
-  - Um registo A (glue record) que associa o FQDN ao respetivo endereço IPv4.
+### 🌳 Delegation Structure and Glue Records
+
+- The DNS server of the domain rcomp-24-25-dd-g2 (Building 1) knows the IPs of the DNS servers of the subdomains (buildings 2, 3, and 4).
+
+- The DNS servers of the other buildings know the IP of the DNS server of the top-level domain.
+
+- Each delegation includes:
+
+  - An NS (Name Server) record pointing to the FQDN of the authoritative server.
+  - An A record (glue record) associating the FQDN with its IPv4 address.
 
 
-### 📜 Outros Registos DNS
+### 📜 Other DNS Records
 
-Em cada domínio definimos:
+In each domain we define:
 
-- **A record:** para `server1` → IP do servidor web do domínio.
+- **A record:** for `server1` → IP of the web server of the domain.
 
   - **CNAME** records:
 
@@ -343,61 +343,61 @@ Em cada domínio definimos:
     - dns → ns
 
 
-### 💻 Configuração dos Clientes DNS
+### 💻 DNS Client Configuration
 
-Todos os dispositivos finais (end-nodes) de um edifício utilizarão o servidor DNS local.
+All end devices in a building will use the local DNS server.
 
-A configuração é feita:
+The configuration is done:
 
-- Automaticamente via DHCP (opções `dns-server` e `domain-name` inseridas nas DHCP pools).
+- Automatically via DHCP (options `dns-server` and `domain-name` inserted in the DHCP pools).
 
-- Manualmente nos servidores (DMZ) com IP estático, indicando o IP do servidor DNS local.
+- Manually on the servers (DMZ) with static IP, indicating the IP of the local DNS server.
 
 ---
 
 
 ## 🔀 NAT (Network Address Translation)
 
-De acordo com o que foi pedido para este sprint, decidimos implementar NAT estático para redirecionar pedidos externos de HTTP/HTTPS para os servidores DNS na DMZ de cada edifício.
+As requested for this sprint, we decided to implement static NAT to redirect external HTTP/HTTPS requests to the DNS servers in the DMZ of each building.
 
-### ⚙️ Ativação do serviço HTTP/HTTPS no servidor DNS da DMZ
+### ⚙️ Enabling HTTP/HTTPS Service on the DNS Server in the DMZ
 
-Em cada edifício, foi acedido o servidor DNS (por exemplo, 10.22.99.130 no Building 1) e ativados os serviços HTTP e HTTPS no separador Services.
+In each building, the DNS server was accessed (e.g., 10.22.99.130 in Building 1) and the HTTP and HTTPS services were enabled in the Services tab.
 
-Criada uma página HTML personalizada, identificando o edifício, domínio e FQDN (ex.: ns.rcomp-24-25-dd-g2 para o Building 1).
+A custom HTML page was created, identifying the building, domain, and FQDN (e.g., ns.rcomp-24-25-dd-g2 for Building 1).
 
 
-### 🌐 Regras de NAT Estático no Router
+### 🌐 Static NAT Rules on the Router
 
-No router de cada edifício, foram criadas regras de **Port Forwarding (NAT Estático)** para redirecionar as portas:
+On the router of each building, **Port Forwarding (Static NAT)** rules were created to redirect the ports:
 
 - **TCP 80 (HTTP)**
 - **TCP 443 (HTTPS)**
 
-As regras redirecionam os pedidos:
+The rules redirect the requests:
 
-- Recebidos na **interface da backbone** (ligação externa)
-- Para o **IP do servidor DNS local** (na DMZ)
+- Received on the **backbone interface** (external connection)
+- To the **IP of the local DNS server** (in the DMZ)
 
-**Exemplo para o Building 1:**
+**Example for Building 1:**
 ```
 ip nat inside source static tcp 10.22.99.130 80 10.22.97.1 80
 ip nat inside source static tcp 10.22.99.130 443 10.22.97.1 443
 ```
 
-### 🔁 Associação das Interfaces NAT
+### 🔁 NAT Interface Association
 
-Optámos por associar as interfaces NAT da seguinte forma:
+We chose to associate the NAT interfaces as follows:
 
 - **DMZ** → **ip nat inside**
 - **Backbone** → **ip nat outside**
 
 
-### Resultado Previsto
+### Expected Outcome
 
-- A página HTML do servidor DNS ficará acessível a partir do exterior do edifício através do IP da interface da backbone do router.
+- The HTML page of the DNS server will be accessible from outside the building through the IP of the router's backbone interface.
 
-- O acesso ao servidor DNS pelo IP público, a partir do interior do edifício, não estará disponível — exatamente como previsto pela configuração de NAT na interface externa.
+- Access to the DNS server via the public IP, from inside the building, will not be available — exactly as expected by the NAT configuration on the external interface.
 
 
 ---
@@ -405,42 +405,42 @@ Optámos por associar as interfaces NAT da seguinte forma:
 
 ## 🔒 ACLs
 
-Deverá ser implementada uma firewall estática no router de cada edifício, utilizando **Access Control Lists (ACLs)**.
-A sua configuração será testada depois de concluídas as principais funcionalidades, de modo a não interferir com os serviços já operacionais.
+A static firewall should be implemented on the router of each building, using **Access Control Lists (ACLs)**.
+Its configuration will be tested after the main functionalities are completed, so as not to interfere with the already operational services.
 
 
-### ✅ Objetivos a Cumprir
+### ✅ Objectives to Achieve
 
-As ACLs deverão obedecer à seguinte sequência de regras:
+The ACLs should follow the following sequence of rules:
 
-1. **Prevenção de spoofing**  
-   Bloquear todo o tráfego de entrada com destino a IPs atribuídos ao próprio router.
-2. **Permissão de tráfego ICMP**  
-   Permitir `echo-request` e `echo-reply` em todas as interfaces, para diagnóstico e monitorização.
-3. **Proteção da DMZ**
-  - Bloquear qualquer tráfego com destino à DMZ, exceto:
+1. **Spoofing Prevention**  
+   Block all incoming traffic destined for IPs assigned to the router itself.
+2. **ICMP Traffic Permission**  
+   Allow `echo-request` and `echo-reply` on all interfaces, for diagnostics and monitoring.
+3. **DMZ Protection**
+  - Block any traffic destined for the DMZ, except:
     - DNS (UDP/TCP 53)
     - HTTP (TCP 80)
     - HTTPS (TCP 443)
-  - Permitir todo o tráfego de saída da DMZ para o exterior.
-4. **Restrição de acesso ao router**  
-   Bloquear tráfego dirigido ao router, com exceções para:
+  - Allow all traffic from the DMZ to the outside.
+4. **Router Access Restriction**  
+   Block traffic directed to the router, with exceptions for:
   - DHCP (bootpc → bootps)
   - TFTP (UDP 69)
   - VoIP / ITS (TCP 2000, SIP UDP/TCP 5060)
   - OSPF
-  - Regras de NAT estático (HTTP, HTTPS e DNS para a DMZ)
-5. **Permissão de tráfego legítimo**  
-   Autorizar a comunicação entre VLANs internas e o acesso ao exterior, conforme as políticas de rede.
+  - Static NAT rules (HTTP, HTTPS, and DNS for the DMZ)
+5. **Legitimate Traffic Permission**  
+   Authorize communication between internal VLANs and access to the outside, according to network policies.
 
-### 🔧 Implementação Técnica
+### 🔧 Technical Implementation
 
-As ACLs serão definidas com nomes claros e aplicadas nas respetivas interfaces do router:
+The ACLs will be defined with clear names and applied to the respective router interfaces:
 
-- `INTERNET_ACL` – aplicada à interface de entrada da backbone (VLAN 382)
-- `WIFI_ACL`, `VOIP_ACL`, `GROUND_FLOOR_ACL`, `FLOOR1_ACL` – aplicadas às interfaces das VLANs internas correspondentes
+- `INTERNET_ACL` – applied to the incoming interface of the backbone (VLAN 382)
+- `WIFI_ACL`, `VOIP_ACL`, `GROUND_FLOOR_ACL`, `FLOOR1_ACL` – applied to the interfaces of the corresponding internal VLANs
 
-Cada ACL terminará com `deny ip any any`, reforçando a negação por omissão e garantindo maior clareza na política de segurança.
+Each ACL will end with `deny ip any any`, reinforcing the denial by default and ensuring greater clarity in the security policy.
 
 
 ---

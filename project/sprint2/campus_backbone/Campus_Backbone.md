@@ -1,19 +1,19 @@
 # Campus Backbone
 
-## 🏢 Estrutura dos Edifícios
+## 🏢 Building Structure
 
-![](estrutura.png)
+![](structure.png)
 
 <br>
 
-## ⚙️ Estrutura Packet Tracer 
+## ⚙️ Packet Tracer Structure
 
 ![](Campus_Backbone.png)
 
 <br>
 
-## 🌐 Requisitos de Endereçamento
+## 🌐 Addressing Requirements
 
-Os endereços de rede IPv4 para cada VLAN devem ser atribuídos de acordo com os seguintes requisitos de número de nós do Building Campus Backbone:
+The IPv4 network addresses for each VLAN must be assigned according to the following node number requirements for the Building Campus Backbone:
 
-- **Backbone**: 220 nós
+- **Backbone**: 220 nodes

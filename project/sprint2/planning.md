@@ -1,8 +1,8 @@
 # 📚 Planning
 
-## 👨‍💻 Alunos
+## 👨‍💻 Students
 
-| **Nome**               | **Building** |
+| **Name**               | **Building** |
 |------------------------|:------------:|
 | Igor (1230543)         |      1       |
 | David (1230487)        |      2       |
@@ -11,121 +11,120 @@
 
 ---
 
-## 📌 Atribuição de Tarefas
+## 📌 Task Assignment
 
-| **Tarefa** | **Descrição da tarefa**                                                                                                                                                                                          |  **Aluno**  |
-|:----------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
-|  **2.1**   | Desenvolvimento de uma simulação do Packet Tracer de camada dois e camada três para o edifício 1, abrangendo o backbone do campus. Integração da simulação do Packet Tracer de cada membro numa única simulação. | **1230543** |
-|  **2.2**   | Desenvolvimento de uma simulação do Packet Tracer de camada dois e camada três para o edifício 2, abrangendo o backbone do campus.                                                                               | **1230487** |
-|  **2.3**   | Desenvolvimento de uma simulação do Packet Tracer de camada dois e camada três para o edifício 3, abrangendo o backbone do campus.                                                                               | **1230544** |
-|  **2.4**   | Desenvolvimento de uma simulação do Packet Tracer de camada dois e camada três para o edifício 4, abrangendo o backbone do campus.                                                                               | **1231046** |
-
+| **Task** | **Task Description**                                                                                                                                                                                       | **Student** |
+|:--------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
+| **2.1**  | Development of a Packet Tracer simulation for both layer two and layer three for building 1, covering the campus backbone. Integration of each member's Packet Tracer simulation into a single simulation. | **1230543** |
+| **2.2**  | Development of a Packet Tracer simulation for both layer two and layer three for building 2, covering the campus backbone.                                                                                 | **1230487** |
+| **2.3**  | Development of a Packet Tracer simulation for both layer two and layer three for building 3, covering the campus backbone.                                                                                 | **1230544** |
+| **2.4**  | Development of a Packet Tracer simulation for both layer two and layer three for building 4, covering the campus backbone.                                                                                 | **1231046** |
 
 ---
 
-## 🧩 Subtarefas por Edifício
+## 🧩 Subtasks by Building
 
-> Cada edifício segue um plano muito semelhante. Para clareza, as subtarefas estão organizadas em secções e detalhadas no conteúdo completo abaixo.
+> Each building follows a very similar plan. For clarity, the subtasks are organized in sections and detailed in the full content below.
 
 - ### 🏢 Building 1
 
-| **Tarefa** | **Descrição da tarefa**                                                                                         |
-|:----------:|-----------------------------------------------------------------------------------------------------------------|
-| **2.1.1**  | Coloque os dispositivos no Edifício 1: PCs, computadores portáteis, servidores, telefones IP, switches, routers |
-| **2.1.2**  | Nomeie os dispositivos no Edifício 1 utilizando as convenções de equipa                                         |
-| **2.1.3**  | Configurar o domínio VTP (`r2425ddg2`) no switch principal do Edifício 1 (modo servidor)                        |
-| **2.1.4**  | Adicionar 4 VLANs de construção (F0, F1, WiFi, DMZ, VoIP) + VLAN de backbone ao switch principal                |
-| **2.1.5**  | Ligue os switches do Edifício 1 com fibra/cobre de acordo com o projeto de cablagem                             |
-| **2.1.6**  | Defina todas as ligações entre switches para o modo trunk (todas as VLAN permitidas)                            |
-| **2.1.7**  | Configurar os switches não principais no Edifício 1 como clientes VTP                                           |
-| **2.1.8**  | Atribuir portas de acesso: VLANs F0/F1 para PCs, VLAN WiFi para AP, VLAN VoIP para telefones                    |
-| **2.1.9**  | Atribuir endereços IPv4 estáticos aos dispositivos do Edifício 1                                                |
-| **2.1.10** | Configurar subinterfaces do router para cada VLAN                                                               |
-| **2.1.11** | Ligue o router do Edifício 1 à VLAN do backbone e atribua um IP                                                 |
-| **2.1.12** | Adicionar rotas estáticas no router do Edifício 1 para o backbone e outros edifícios                            |
-| **2.1.13** | Simular ligações de backbone para outros edifícios (modo trunk)                                                 |
-| **2.1.14** | Validar os caminhos de redundância entre os switches do Edifício 1                                              |
-| **2.1.15** | Documento Building 1 especificações: IDs de VLAN, intervalos de IP, tabelas de encaminhamento em `planning.md`  |
+|  **Task**  | **Task Description**                                                                     |
+|:----------:|------------------------------------------------------------------------------------------|
+| **2.1.1**  | Place devices in Building 1: PCs, laptops, servers, IP phones, switches, routers         |
+| **2.1.2**  | Name the devices in Building 1 using the team conventions                                |
+| **2.1.3**  | Configure the VTP domain (`r2425ddg2`) on the main switch of Building 1 (server mode)    |
+| **2.1.4**  | Add 4 building VLANs (F0, F1, WiFi, DMZ, VoIP) + backbone VLAN to the main switch        |
+| **2.1.5**  | Connect the switches in Building 1 with fiber/copper according to the cabling project    |
+| **2.1.6**  | Set all connections between switches to trunk mode (all VLANs allowed)                   |
+| **2.1.7**  | Configure non-main switches in Building 1 as VTP clients                                 |
+| **2.1.8**  | Assign access ports: F0/F1 VLANs for PCs, WiFi VLAN for AP, VoIP VLAN for phones         |
+| **2.1.9**  | Assign static IPv4 addresses to devices in Building 1                                    |
+| **2.1.10** | Configure router subinterfaces for each VLAN                                             |
+| **2.1.11** | Connect Building 1's router to the backbone VLAN and assign an IP                        |
+| **2.1.12** | Add static routes on Building 1's router for the backbone and other buildings            |
+| **2.1.13** | Simulate backbone connections to other buildings (trunk mode)                            |
+| **2.1.14** | Validate redundancy paths between switches in Building 1                                 |
+| **2.1.15** | Document Building 1 specifications: VLAN IDs, IP ranges, routing tables in `planning.md` |
 
 <br>
 
 - ### 🏢 Building 2
 
-| **Tarefa** | **Descrição da tarefa**                                                                                         |
-|:----------:|-----------------------------------------------------------------------------------------------------------------|
-| **2.2.1**  | Coloque os dispositivos no Edifício 2: PCs, computadores portáteis, servidores, telefones IP, switches, routers |
-| **2.2.2**  | Nomeie os dispositivos no Edifício 2 utilizando as convenções de equipa                                         |
-| **2.2.3**  | Configurar o domínio VTP (`r2425ddg2`) no switch principal do Edifício 2 (modo servidor)                        |
-| **2.2.4**  | Adicionar 4 VLANs de construção (F0, F1, WiFi, DMZ, VoIP) + VLAN de backbone ao switch principal                |
-| **2.2.5**  | Ligue os switches do Edifício 2 com fibra/cobre de acordo com o projeto de cablagem                             |
-| **2.2.6**  | Defina todas as ligações entre switches para o modo trunk (todas as VLAN permitidas)                            |
-| **2.2.7**  | Configurar os switches não principais no Edifício 2 como clientes VTP                                           |
-| **2.2.8**  | Atribuir portas de acesso: VLANs F0/F1 para PCs, VLAN WiFi para AP, VLAN VoIP para telefones                    |
-| **2.2.9**  | Atribuir endereços IPv2 estáticos aos dispositivos do Edifício 2                                                |
-| **2.2.10** | Configurar subinterfaces do router para cada VLAN                                                               |
-| **2.2.11** | Ligue o router do Edifício 2 à VLAN do backbone e atribua um IP                                                 |
-| **2.2.12** | Adicionar rotas estáticas no router do Edifício 2 para o backbone e outros edifícios                            |
-| **2.2.13** | Simular ligações de backbone para outros edifícios (modo trunk)                                                 |
-| **2.2.14** | Validar os caminhos de redundância entre os switches do Edifício 2                                              |
-| **2.2.15** | Documento Building 2 especificações: IDs de VLAN, intervalos de IP, tabelas de encaminhamento em `planning.md`  |
+|  **Task**  | **Task Description**                                                                     |
+|:----------:|------------------------------------------------------------------------------------------|
+| **2.2.1**  | Place devices in Building 2: PCs, laptops, servers, IP phones, switches, routers         |
+| **2.2.2**  | Name the devices in Building 2 using the team conventions                                |
+| **2.2.3**  | Configure the VTP domain (`r2425ddg2`) on the main switch of Building 2 (server mode)    |
+| **2.2.4**  | Add 4 building VLANs (F0, F1, WiFi, DMZ, VoIP) + backbone VLAN to the main switch        |
+| **2.2.5**  | Connect the switches in Building 2 with fiber/copper according to the cabling project    |
+| **2.2.6**  | Set all connections between switches to trunk mode (all VLANs allowed)                   |
+| **2.2.7**  | Configure non-main switches in Building 2 as VTP clients                                 |
+| **2.2.8**  | Assign access ports: F0/F1 VLANs for PCs, WiFi VLAN for AP, VoIP VLAN for phones         |
+| **2.2.9**  | Assign static IPv2 addresses to devices in Building 2                                    |
+| **2.2.10** | Configure router subinterfaces for each VLAN                                             |
+| **2.2.11** | Connect Building 2's router to the backbone VLAN and assign an IP                        |
+| **2.2.12** | Add static routes on Building 2's router for the backbone and other buildings            |
+| **2.2.13** | Simulate backbone connections to other buildings (trunk mode)                            |
+| **2.2.14** | Validate redundancy paths between switches in Building 2                                 |
+| **2.2.15** | Document Building 2 specifications: VLAN IDs, IP ranges, routing tables in `planning.md` |
 
 <br>
 
 - ### 🏢 Building 3
 
-| **Tarefa** | **Descrição da tarefa**                                                                                         |
-|:----------:|-----------------------------------------------------------------------------------------------------------------|
-| **2.3.1**  | Coloque os dispositivos no Edifício 3: PCs, computadores portáteis, servidores, telefones IP, switches, routers |
-| **2.3.2**  | Nomeie os dispositivos no Edifício 3 utilizando as convenções de equipa                                         |
-| **2.3.3**  | Configurar o domínio VTP (`r2425ddg2`) no switch principal do Edifício 3 (modo servidor)                        |
-| **2.3.4**  | Adicionar 4 VLANs de construção (F0, F1, WiFi, DMZ, VoIP) + VLAN de backbone ao switch principal                |
-| **2.3.5**  | Ligue os switches do Edifício 3 com fibra/cobre de acordo com o projeto de cablagem                             |
-| **2.3.6**  | Defina todas as ligações entre switches para o modo trunk (todas as VLAN permitidas)                            |
-| **2.3.7**  | Configurar os switches não principais no Edifício 3 como clientes VTP                                           |
-| **2.3.8**  | Atribuir portas de acesso: VLANs F0/F1 para PCs, VLAN WiFi para AP, VLAN VoIP para telefones                    |
-| **2.3.9**  | Atribuir endereços IPv3 estáticos aos dispositivos do Edifício 3                                                |
-| **2.3.10** | Configurar subinterfaces do router para cada VLAN                                                               |
-| **2.3.11** | Ligue o router do Edifício 3 à VLAN do backbone e atribua um IP                                                 |
-| **2.3.12** | Adicionar rotas estáticas no router do Edifício 4 para o backbone e outros edifícios                            |
-| **2.3.13** | Simular ligações de backbone para outros edifícios (modo trunk)                                                 |
-| **2.3.14** | Validar os caminhos de redundância entre os switches do Edifício 3                                              |
-| **2.3.15** | Documento Building 3 especificações: IDs de VLAN, intervalos de IP, tabelas de encaminhamento em `planning.md`  |
+|  **Task**  | **Task Description**                                                                     |
+|:----------:|------------------------------------------------------------------------------------------|
+| **2.3.1**  | Place devices in Building 3: PCs, laptops, servers, IP phones, switches, routers         |
+| **2.3.2**  | Name the devices in Building 3 using the team conventions                                |
+| **2.3.3**  | Configure the VTP domain (`r2425ddg2`) on the main switch of Building 3 (server mode)    |
+| **2.3.4**  | Add 4 building VLANs (F0, F1, WiFi, DMZ, VoIP) + backbone VLAN to the main switch        |
+| **2.3.5**  | Connect the switches in Building 3 with fiber/copper according to the cabling project    |
+| **2.3.6**  | Set all connections between switches to trunk mode (all VLANs allowed)                   |
+| **2.3.7**  | Configure non-main switches in Building 3 as VTP clients                                 |
+| **2.3.8**  | Assign access ports: F0/F1 VLANs for PCs, WiFi VLAN for AP, VoIP VLAN for phones         |
+| **2.3.9**  | Assign static IPv3 addresses to devices in Building 3                                    |
+| **2.3.10** | Configure router subinterfaces for each VLAN                                             |
+| **2.3.11** | Connect Building 3's router to the backbone VLAN and assign an IP                        |
+| **2.3.12** | Add static routes on Building 4's router for the backbone and other buildings            |
+| **2.3.13** | Simulate backbone connections to other buildings (trunk mode)                            |
+| **2.3.14** | Validate redundancy paths between switches in Building 3                                 |
+| **2.3.15** | Document Building 3 specifications: VLAN IDs, IP ranges, routing tables in `planning.md` |
 
 <br>
 
 - ### 🏢 Building 4
 
-| **Tarefa** | **Descrição da tarefa**                                                                                         |
-|:----------:|-----------------------------------------------------------------------------------------------------------------|
-| **2.4.1**  | Coloque os dispositivos no Edifício 4: PCs, computadores portáteis, servidores, telefones IP, switches, routers |
-| **2.4.2**  | Nomeie os dispositivos no Edifício 4 utilizando as convenções de equipa                                         |
-| **2.4.3**  | Configurar o domínio VTP (`r2425ddg2`) no switch principal do Edifício 4 (modo servidor)                        |
-| **2.4.4**  | Adicionar 4 VLANs de construção (F0, F1, WiFi, DMZ, VoIP) + VLAN de backbone ao switch principal                |
-| **2.4.5**  | Ligue os switches do Edifício 4 com fibra/cobre de acordo com o projeto de cablagem                             |
-| **2.4.6**  | Defina todas as ligações entre switches para o modo trunk (todas as VLAN permitidas)                            |
-| **2.4.7**  | Configurar os switches não principais no Edifício 4 como clientes VTP                                           |
-| **2.4.8**  | Atribuir portas de acesso: VLANs F0/F1 para PCs, VLAN WiFi para AP, VLAN VoIP para telefones                    |
-| **2.4.9**  | Atribuir endereços IPv4 estáticos aos dispositivos do Edifício 4                                                |
-| **2.4.10** | Configurar subinterfaces do router para cada VLAN                                                               |
-| **2.4.11** | Ligue o router do Edifício 4 à VLAN do backbone e atribua um IP                                                 |
-| **2.4.12** | Adicionar rotas estáticas no router do Edifício 4 para o backbone e outros edifícios                            |
-| **2.4.13** | Simular ligações de backbone para outros edifícios (modo trunk)                                                 |
-| **2.4.14** | Validar os caminhos de redundância entre os switches do Edifício 4                                              |
-| **2.4.15** | Documento Building 4 especificações: IDs de VLAN, intervalos de IP, tabelas de encaminhamento em `planning.md`  |
+|  **Task**  | **Task Description**                                                                     |
+|:----------:|------------------------------------------------------------------------------------------|
+| **2.4.1**  | Place devices in Building 4: PCs, laptops, servers, IP phones, switches, routers         |
+| **2.4.2**  | Name the devices in Building 4 using the team conventions                                |
+| **2.4.3**  | Configure the VTP domain (`r2425ddg2`) on the main switch of Building 4 (server mode)    |
+| **2.4.4**  | Add 4 building VLANs (F0, F1, WiFi, DMZ, VoIP) + backbone VLAN to the main switch        |
+| **2.4.5**  | Connect the switches in Building 4 with fiber/copper according to the cabling project    |
+| **2.4.6**  | Set all connections between switches to trunk mode (all VLANs allowed)                   |
+| **2.4.7**  | Configure non-main switches in Building 4 as VTP clients                                 |
+| **2.4.8**  | Assign access ports: F0/F1 VLANs for PCs, WiFi VLAN for AP, VoIP VLAN for phones         |
+| **2.4.9**  | Assign static IPv4 addresses to devices in Building 4                                    |
+| **2.4.10** | Configure router subinterfaces for each VLAN                                             |
+| **2.4.11** | Connect Building 4's router to the backbone VLAN and assign an IP                        |
+| **2.4.12** | Add static routes on Building 4's router for the backbone and other buildings            |
+| **2.4.13** | Simulate backbone connections to other buildings (trunk mode)                            |
+| **2.4.14** | Validate redundancy paths between switches in Building 4                                 |
+| **2.4.15** | Document Building 4 specifications: VLAN IDs, IP ranges, routing tables in `planning.md` |
 
 ---
 
-## ⚙️ Decisões Técnicas
+## ⚙️ Technical Decisions
 
 - **Packet Tracer:** 
-  - versão 8.2.2
+  - version 8.2.2
   
 
-- **Domínio VTP:** 
+- **VTP Domain:** 
   - `r2425ddg2`
 
 
-- **Nomenclatura dos dispositivos:** 
+- **Device Naming:** 
   - `Building_Device_Floor` (ex: `B2_PC_F0`)
   - `Building_Device_Number` (ex: `B2_Laptop_1`)
 
@@ -134,18 +133,18 @@
   - 362 – 383
   
 
-- **Modelo de router:** 
+- **Router Model:** 
   - 2811
 
 ---
 
-## 🗂️ Base de Dados de VLANs
+## 🗂️ VLAN Database
 
 
->Tabela inclui 21 VLANs dos edifícios + Backbone (ID 362 a 382), com nomes e descrições para cada tipo de tráfego.
+>Table includes 21 VLANs from the buildings + Backbone (ID 362 to 382), with names and descriptions for each type of traffic.
 
 
-| VLAN ID | nome VLAN       | descrição VLAN                                                |
+| VLAN ID | name VLAN       | description VLAN                                              |
 |---------|-----------------|---------------------------------------------------------------|
 | 362     | B1_floor0       | Building 1 - Floor 0 (outlets)                                |
 | 363     | B1_floor1       | Building 1 - Floor 1 (outlets)                                |
@@ -171,123 +170,123 @@
 
 ---
 
-## 🎯 Objetivos Gerais
+## 🎯 General Objectives
 
-- Criar uma simulação das redes por edifício incluindo o backbone comum.
-- Uniformizar a nomenclatura dos dispositivos.
-- Simular estrutura de cablagem com switches e cabos apropriados.
-
----
-
-## 🧱 Configuração Layer 2
-
-- VLANs por piso, WiFi, DMZ e VoIP em cada edifício.
-- Backbone VLAN comum a todos.
-- Switches ligados em trunk.
-- VTP configurado com um servidor por edifício.
-- STP ativo em todos os switches.
+- Create a simulation of the networks by building including the common backbone.
+- Standardize the naming of devices.
+- Simulate cabling structure with appropriate switches and cables.
 
 ---
 
-## 🌐 Configuração Layer 3
+## 🧱 Layer 2 Configuration
 
-- Cada VLAN com sub-rede IPv4 dedicada.
-- Router modelo 2811 por edifício com subinterfaces.
-- Tráfego inter-VLAN encaminhado via backbone.
-- Endereçamento baseado em bloco `10.22.96.0/20` (ver tabelas completas por edifício).
+- VLANs by floor, WiFi, DMZ, and VoIP in each building.
+- Common Backbone VLAN for all.
+- Switches connected in trunk.
+- VTP configured with one server per building.
+- STP active on all switches.
 
 ---
 
-## 📄 Conteúdo Técnico Detalhado
+## 🌐 Layer 3 Configuration
+
+- Each VLAN with dedicated IPv4 subnet.
+- Router model 2811 per building with subinterfaces.
+- Inter-VLAN traffic routed via backbone.
+- Addressing based on `10.22.96.0/20` block (see complete tables by building).
+
+---
+
+## 📄 Detailed Technical Content
 
 ### 🔌 VLANs
-Em cada edifício, as seguintes VLANs devem ser configuradas:
+In each building, the following VLANs must be configured:
 
-- **Piso 0**: VLAN para todas as tomadas.
-- **Piso 1**: VLAN para todas as tomadas.
-- **Rede Wi-Fi**: VLAN para todas as tomadas de APs dentro do edifício.
-- **DMZ**: VLAN para servidores, estações de trabalho de administração e dispositivos de rede da infraestrutura.
-- **VoIP**: VLAN para todos os telefones IP dentro do edifício.
+- **Floor 0**: VLAN for all outlets.
+- **Floor 1**: VLAN for all outlets.
+- **Wi-Fi Network**: VLAN for all APs' outlets within the building.
+- **DMZ**: VLAN for servers, administrative workstations, and network infrastructure devices.
+- **VoIP**: VLAN for all IP phones within the building.
 
-Essas VLANs, apesar de estarem associadas a um edifício específico, devem estar disponíveis em todos os switches de todos os edifícios. Cada switch deve manter uma base de dados local com todas as VLANs, e todas as interligações entre switches devem ser configuradas em modo trunk para transportar todas as VLANs.
+These VLANs, despite being associated with a specific building, must be available on all switches of all buildings. Each switch must maintain a local database with all VLANs, and all interconnections between switches must be configured in trunk mode to carry all VLANs.
 
-Adicionalmente, uma VLAN para o Campus Backbone deve ser configurada, compartilhada por todos os edifícios. Essa VLAN deve estar disponível em todos os switches, em suas bases de dados locais.
+Additionally, a VLAN for the Campus Backbone must be configured, shared by all buildings. This VLAN must be available on all switches, in their local databases.
 <br><br>
 
-### ⚙️ Protocolo de Transporte de VLAN (VTP)
-Para garantir a consistência entre os switches, utilize o VTP, que facilita a propagação das informações de VLANs.
+### ⚙️ VLAN Trunking Protocol (VTP)
+To ensure consistency among switches, use VTP, which facilitates the propagation of VLAN information.
 
-- **Domínio VTP**: Todos os switches devem estar no mesmo domínio VTP, com o nome de domínio configurado uniformemente (vtp domain ...).
-- **Modo de servidor**: Pelo menos um switch deve estar no modo servidor (vtp mode server), onde a base de dados de VLANs pode ser configurada manualmente.
-- **Modo de cliente**: Outros switches podem estar em modo cliente (vtp mode client), onde eles recebem as atualizações da base de dados de VLAN propagadas pelos switches no modo servidor.
-- **Modo trunk**: As portas de interligação entre switches devem estar configuradas no modo trunk (switchport mode trunk), permitindo a propagação de todas as VLANs.
+- **VTP Domain**: All switches must be in the same VTP domain, with the domain name configured uniformly (vtp domain ...).
+- **Server mode**: At least one switch must be in server mode (vtp mode server), where the VLAN database can be manually configured.
+- **Client mode**: Other switches can be in client mode (vtp mode client), where they receive updates of the VLAN database propagated by switches in server mode.
+- **Trunk mode**: The interconnection ports between switches must be configured in trunk mode (switchport mode trunk), allowing the propagation of all VLANs.
   <br><br>
 
-### 📊 Banco de Dados de VLAN & Domínio VTP
+### 📊 VLAN Database & VTP Domain
 
-- **VLANs**: Cada VLAN deve ter um nome único e significativo, com um VLANID único (entre 2 e 1000, para evitar interferências).
-- **Domínio VTP**: O nome do domínio VTP deve ser o mesmo em todos os switches para garantir a propagação correta.
+- **VLANs**: Each VLAN must have a unique and meaningful name, with a unique VLANID (between 2 and 1000, to avoid interference).
+- **VTP Domain**: The name of the VTP domain must be the same on all switches to ensure correct propagation.
   <br><br>
 
-### 🌐 Redes IPv4
+### 🌐 IPv4 Networks
 
-#### Requisitos de Endereçamento
+#### Addressing Requirements
 
-Os endereços de rede IPv4 para cada VLAN devem ser atribuídos de acordo com os seguintes requisitos de número de nós:
+IPv4 network addresses for each VLAN must be assigned according to the following node number requirements:
 
 - **Building Campus Backbone**:
-  - **Backbone**: 220 nós
+  - **Backbone**: 220 nodes
 
 
 - **Building 1**:
-  - **Pontos de acesso - Piso 0**: 40 nós
-  - **Pontos de acesso - Piso 1**: 45 nós
-  - **Wi-Fi**: 95 nós
-  - **DMZ (Servidores, estações de trabalho administrativas e dispositivos de infraestrutura de rede)**: 110 nós
-  - **VoIP (Telefones IP)**: 70 nós
-  - **B1**: 360 nós
+  - **Access points - Floor 0**: 40 nodes
+  - **Access points - Floor 1**: 45 nodes
+  - **Wi-Fi**: 95 nodes
+  - **DMZ (Servers, administrative workstations, and network infrastructure devices)**: 110 nodes
+  - **VoIP (IP Phones)**: 70 nodes
+  - **B1**: 360 nodes
 
 
 - **Building 2**:
-  - **Pontos de acesso - Piso 0**: 100 nós
-  - **Pontos de acesso - Piso 1**: 110 nós
-  - **Wi-Fi**: 200 nós
-  - **DMZ (Servidores, estações de trabalho administrativas e dispositivos de infraestrutura de rede)**: 60 nós
-  - **VoIP (Telefones IP)**: 120 nós
-  - **B2**: 690 nós
+  - **Access points - Floor 0**: 100 nodes
+  - **Access points - Floor 1**: 110 nodes
+  - **Wi-Fi**: 200 nodes
+  - **DMZ (Servers, administrative workstations, and network infrastructure devices)**: 60 nodes
+  - **VoIP (IP Phones)**: 120 nodes
+  - **B2**: 690 nodes
 
 
 - **Building 3**:
-  - **Pontos de acesso - Piso 0**: 115 nós
-  - **Pontos de acesso - Piso 1**: 135 nós
-  - **Wi-Fi**: 220 nós
-  - **DMZ (Servidores, estações de trabalho administrativas e dispositivos de infraestrutura de rede)**: 50 nós
-  - **VoIP (Telefones IP)**: 170 nós
-  - **B3**: 690 nós
+  - **Access points - Floor 0**: 115 nodes
+  - **Access points - Floor 1**: 135 nodes
+  - **Wi-Fi**: 220 nodes
+  - **DMZ (Servers, administrative workstations, and network infrastructure devices)**: 50 nodes
+  - **VoIP (IP Phones)**: 170 nodes
+  - **B3**: 690 nodes
 
 
 - **Building 4**:
-  - **Pontos de acesso - Piso 0**: 125 nós
-  - **Pontos de acesso - Piso 1**: 170 nós
-  - **Wi-Fi**: 200 nós
-  - **DMZ (Servidores, estações de trabalho administrativas e dispositivos de infraestrutura de rede)**: 45 nós
-  - **VoIP (Telefones IP)**: 160 nós
-  - **B4**: 700 nós
+  - **Access points - Floor 0**: 125 nodes
+  - **Access points - Floor 1**: 170 nodes
+  - **Wi-Fi**: 200 nodes
+  - **DMZ (Servers, administrative workstations, and network infrastructure devices)**: 45 nodes
+  - **VoIP (IP Phones)**: 160 nodes
+  - **B4**: 700 nodes
 
 
-- **Gerais**:
-  - **Planejamento do Sprint**: A equipe deve definir:
-    - O endereço de rede IPv4 para o Campus Backbone.
-    - O endereço IPv4 dos roteadores para a conexão com a rede backbone.
-    - O bloco de endereços para cada membro da equipe dentro do seu edifício, assegurando que não haja sobreposição entre os blocos.
+- **General**:
+  - **Sprint Planning**: The team must define:
+    - The IPv4 network address for the Campus Backbone.
+    - The IPv4 address of the routers for the connection to the backbone network.
+    - The address block for each team member within their building, ensuring no overlap between blocks.
       <br><br>
 
-#### 🔧 Espaço de Endereços IPv4
+#### 🔧 IPv4 Address Space
 
-- **Bloco de Endereços IPv4 a ser utilizado**: 10.22.96.0/20
+- **IPv4 Address Block to be used**: 10.22.96.0/20
 <br><br>
 
-#### 🏠 Distribuição de Endereçamento IPv4 por Zona/Edifício
+#### 🏠 IPv4 Addressing Distribution by Zone/Building
 
 | **Subnet address** |  **Netmask**  |   **Range of addresses**    |       **Usable IPs**        | **Hosts** | **Zones/Buildings** |
 |:------------------:|:-------------:|:---------------------------:|:---------------------------:|:---------:|:-------------------:|
@@ -352,50 +351,51 @@ Os endereços de rede IPv4 para cada VLAN devem ser atribuídos de acordo com os
 
 <br>
 
-### 🔗 Endereço IPv4 do Nó do Router do ISP
-- **Endereço**: 87.5.127.93/30
+### 🔗 IPv4 Address of the ISP Router Node
+- **Address**: 87.5.127.93/30
 
 
 ---
 
-## 💻 Dispositivos Finais na Simulação
+## 💻 End Devices in the Simulation
 
-Cada building deve conter pelo menos:
+Each building must contain at least:
 
-- PC (piso 0)
-- PC (piso 1)
-- Laptop e/ou Smartphone e/ou Tablet
-- Servidor (DMZ)
-- Telefone VoIP
+- PC (floor 0)
+- PC (floor 1)
+- Laptop and/or Smartphone and/or Tablet
+- Server (DMZ)
+- VoIP Phone
 
-Os dispositivos finais devem ser conectados às VLANs corretas configurando as portas correspondentes do switch no modo de acesso (`switchport mode access`) e atribuindo a VLAN correta a elas (`switchport access vlan ...`).
+The end devices must be connected to the correct VLANs by configuring the corresponding switch ports in access mode (`switchport mode access`) and assigning the correct VLAN to them (`switchport access vlan ...`).
 
-Exceto os telefones VoIP, todos os outros dispositivos finais devem ter uma configuração IPv4 estática e definida manualmente, incluindo o gateway padrão.
+Except for VoIP phones, all other end devices must have a static and manually defined IPv4 configuration, including the default gateway.
 
-Para os telefones VoIP, deve ser utilizado o modelo **7960**. A porta correspondente no switch também deve ser configurada no modo de acesso (`switchport mode access`), porém, a VLAN de acesso deve ser desativada (`no switchport access vlan`), e a VLAN de voz deve ser utilizada no lugar (`switchport voice vlan ...`).
+For VoIP phones, the model **7960** must be used. The corresponding port on the switch must also be configured in access mode (`switchport mode access`), however, the access VLAN must be deactivated (`no switchport access vlan`), and the voice VLAN must be used instead (`switchport voice vlan ...`).
 
-A configuração IPv4 dos telefones VoIP está fora do escopo por enquanto e será abordada no próximo sprint.
+The IPv4 configuration of the VoIP phones is out of scope for now and will be addressed in the next sprint.
 <br>
 
-- ### Routers e Roteamento Estático
+- ### Routers and Static Routing
 
-Em cada edifício, deve haver um roteador. Utilize exclusivamente o modelo **2811**, pois outros modelos podem não suportar VoIP no Packet Tracer, o que será necessário no próximo sprint.
+In each building, there must be a router. Use exclusively the model **2811**, as other models may not support VoIP in Packet Tracer, which will be necessary in the next sprint.
 
-O roteador de cada edifício será responsável pelo encaminhamento do tráfego IPv4 entre as redes locais IPv4 (dentro do edifício) e as redes IPv4 de outros edifícios. O tráfego para outros edifícios será roteado através da rede IPv4 do backbone, direcionado para o roteador apropriado.
+The router in each building will be responsible for forwarding IPv4 traffic between the local IPv4 networks (within the building) and the IPv4 networks of other buildings. Traffic to other buildings will be routed through the IPv4 backbone network, directed to the appropriate router.
 
-Os endereços IPv4 dos nós utilizados por cada roteador na rede backbone são definidos na reunião de planeamento. Juntamente com os blocos de endereços atribuídos a cada edifício, isso possibilita a construção da tabela de roteamento estático em cada roteador.
+The IPv4 addresses of the nodes used by each router in the backbone network are defined in the planning meeting. Along with the address blocks assigned to each building, this enables the construction of the static routing table in each router.
 
-Cada membro da equipa é responsável por criar a simulação do Packet Tracer para um edifício. Cada simulação abrangerá um único edifício, mas deve incluir a rede backbone do campus. O **cross-connect principal** e todos os **cross-connects intermediários** devem ser representados por um switch, e um **roteador (modelo 2811)** deve estar conectado a cada um deles.
+Each team member is responsible for creating the Packet Tracer simulation for one building. Each simulation will cover a single building but must include the campus backbone network. The **main cross-connect** and all **intermediate cross-connects** must be represented by a switch, and a **router (model 2811)** must be connected to each of them.
 
-Como cada roteador está conectado a **seis redes IPv4 diferentes**, seria esperado um roteador com seis interfaces de rede. No entanto, assim como uma única conexão no modo trunk entre dois switches pode conectar várias VLANs, o mesmo conceito se aplica à conexão com um roteador. No roteador, cada VLAN aparecerá como uma **interface de rede lógica (subinterface)**.
+As each router is connected to **six different IPv4 networks**, a router with six network interfaces would be expected. However, just as a single connection in trunk mode between two switches can connect multiple VLANs, the same concept applies to the connection to a router. In the router, each VLAN will appear as a **logical network interface (subinterface)**.
 
-Assim, para conectar o roteador a essas seis redes, a melhor solução é usar **uma única conexão de cabo para uma porta configurada no modo trunk no switch**.
+Thus, to connect the router to these six networks, the best solution is to use **a single cable connection to a port configured in trunk mode on the switch**.
 
-Quanto à configuração dos roteadores fora do edifício, deve abranger apenas a conexão com a VLAN do backbone e o respetivo endereço IP. A configuração completa do roteador de cada edifício é responsabilidade do membro da equipe encarregado desse edifício. 
+Regarding the configuration of the routers outside the building, it should cover only the connection to the backbone VLAN and the respective IP address. The complete configuration of the router for each building is the responsibility of the team member in charge of that building. 
 
 ---
 
-## 🌍 Ligação à Internet
+## 🌍 Internet Connection
 
-- Apenas Edifício 1 liga-se à Internet via router ISP (IPv4: `87.5.127.93/30`) com ligação DSL. 
+- Only Building 1 connects to the Internet via ISP router (IPv4: `87.5.127.93/30`) with DSL connection.
 
+---

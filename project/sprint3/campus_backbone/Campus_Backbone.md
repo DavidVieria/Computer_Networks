@@ -1,12 +1,12 @@
 # Campus Backbone
 
-## 🏢 Estrutura dos Edifícios (Física)
+## 🏢 Building Structure (Physical)
 
-![](estrutura.png)
+![](structure.png)
 
 <br>
 
-## ⚙️ Estrutura Packet Tracer (Lógica)
+## ⚙️ Packet Tracer Structure (Logical)
 
 ![](logical_campus.png)
 

@@ -2,74 +2,74 @@
 
 ## 1. Backlog
 
-| **Tarefa** | **Descrição da tarefa**                                                                                                                                                                                                                                                     |  **Aluno**  |
-|:----------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
-|  **3.1**   | Atualizar a simulação Packet Tracer (building1.pkt) de camada 3 do sprint anterior, para incluir as funcionalidades descritas neste sprint para o edifício um.                                                                                                              | **1230543** |
-|  **3.2**   | Atualizar a simulação Packet Tracer (building2.pkt) de camada 3 do sprint anterior, para incluir as funcionalidades descritas neste sprint para o edifício dois. Integração final das simulações Packet Tracer de cada membro num único ficheiro de simulação (campus.pkt). | **1230487** |
-|  **3.3**   | Atualizar a simulação Packet Tracer (building3.pkt) de camada 3 do sprint anterior, para incluir as funcionalidades descritas neste sprint para o edifício três.                                                                                                            | **1230544** |
-|  **3.4**   | Atualizar a simulação Packet Tracer (building4.pkt) de camada 3 do sprint anterior, para incluir as funcionalidades descritas neste sprint para o edifício quatro.                                                                                                          | **1231046** |
+| **Task** | **Task Description**                                                                                                                                                                                                                                                | **Student** |
+|:--------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
+| **3.1**  | Update the Packet Tracer simulation (building1.pkt) from the previous sprint's Layer 3, to include the features described in this sprint for building one.                                                                                                          | **1230543** |
+| **3.2**  | Update the Packet Tracer simulation (building2.pkt) from the previous sprint's Layer 3, to include the features described in this sprint for building two. Final integration of each member's Packet Tracer simulations into a single simulation file (campus.pkt). | **1230487** |
+| **3.3**  | Update the Packet Tracer simulation (building3.pkt) from the previous sprint's Layer 3, to include the features described in this sprint for building three.                                                                                                        | **1230544** |
+| **3.4**  | Update the Packet Tracer simulation (building4.pkt) from the previous sprint's Layer 3, to include the features described in this sprint for building four.                                                                                                         | **1231046** |
 
 <br>
 
 ## 2. Review:
 
-> Durante este sprint, o grupo composto por quatro elementos organizou-se de forma a distribuir o trabalho de forma equitativa. Cada membro ficou responsável pela simulação dum edifício (Edifícios 1 a 4), garantindo a implementação completa em Packet Tracer.
+> During this sprint, the group of four members organized themselves to distribute the work equally. Each member was responsible for the simulation of one building (Buildings 1 to 4), ensuring complete implementation in Packet Tracer.
 
-> Todas as sub-tarefas atribuídas a cada elemento foram concretizadas sem problemas técnicos, com exceção da tarefa de firewall, cuja implementação colocou-nos bastantes dificuldades. No entanto, após várias tentativas e pesquisa, acreditamos ter conseguido resolvê-la com sucesso.
+> All the subtasks assigned to each member were completed without technical issues, except for the firewall task, which presented significant challenges. However, after several attempts and research, we successfully solved it.
 
-> Comparativamente aos sprints anteriores, o facto de termos tido menos uma semana para concluir o trabalho prejudicou o grupo, mas consideramos, ainda assim, ter apresentado um bom resultado.
+> Compared to previous sprints, having one less week to complete the work was a disadvantage for the group, but we still believe we delivered an excellent result.
 
 <br>
 
-## 3. Avaliação de sub-tarefas
+## 3. Subtask Evaluation
 
 
 - ### 🏢 1230543 (Building 1):
 
-|    Tarefa    |          Estado           |
-|:------------:|:-------------------------:|
-| OSPF Routing |  Totalmente implementado  |
-| HTTP Server  |  Totalmente implementado  |
-|    DHCPv4    |  Totalmente implementado  |
-|     VoIP     |  Totalmente implementado  |
-|     DNS      |  Totalmente implementado  |
-|   Firewall   | Parcialmente implementado |
+|     Task     |      Status       |
+|:------------:|:-----------------:|
+| OSPF Routing | Fully implemented |
+| HTTP Server  | Fully implemented |
+|    DHCPv4    | Fully implemented |
+|     VoIP     | Fully implemented |
+|     DNS      | Fully implemented |
+|   Firewall   | Fully implemented |
 
 <br>
 
 - ### 🏢 1230487 (Building 2):
 
-|    Tarefa    |          Estado           |
-|:------------:|:-------------------------:|
-| OSPF Routing |  Totalmente implementado  |
-| HTTP Server  |  Totalmente implementado  |
-|    DHCPv4    |  Totalmente implementado  |
-|     VoIP     |  Totalmente implementado  |
-|     DNS      |  Totalmente implementado  |
-|   Firewall   | Parcialmente implementado |
+|     Task     |      Status       |
+|:------------:|:-----------------:|
+| OSPF Routing | Fully implemented |
+| HTTP Server  | Fully implemented |
+|    DHCPv4    | Fully implemented |
+|     VoIP     | Fully implemented |
+|     DNS      | Fully implemented |
+|   Firewall   | Fully implemented |
 
 <br>
 
 - ### 🏢 1230544 (Building 3):
 
-|    Tarefa    |          Estado           |
-|:------------:|:-------------------------:|
-| OSPF Routing |  Totalmente implementado  |
-| HTTP Server  |  Totalmente implementado  |
-|    DHCPv4    |  Totalmente implementado  |
-|     VoIP     |  Totalmente implementado  |
-|     DNS      |  Totalmente implementado  |
-|   Firewall   | Parcialmente implementado |
+|     Task     |      Status       |
+|:------------:|:-----------------:|
+| OSPF Routing | Fully implemented |
+| HTTP Server  | Fully implemented |
+|    DHCPv4    | Fully implemented |
+|     VoIP     | Fully implemented |
+|     DNS      | Fully implemented |
+|   Firewall   | Fully implemented |
 
 <br>
 
 - ### 🏢 1231046 (Building 4):
 
-|    Tarefa    |          Estado           |
-|:------------:|:-------------------------:|
-| OSPF Routing |  Totalmente implementado  |
-| HTTP Server  |  Totalmente implementado  |
-|    DHCPv4    |  Totalmente implementado  |
-|     VoIP     |  Totalmente implementado  |
-|     DNS      |  Totalmente implementado  |
-|   Firewall   | Parcialmente implementado |
+|     Task     |      Status       |
+|:------------:|:-----------------:|
+| OSPF Routing | Fully implemented |
+| HTTP Server  | Fully implemented |
+|    DHCPv4    | Fully implemented |
+|     VoIP     | Fully implemented |
+|     DNS      | Fully implemented |
+|   Firewall   | Fully implemented |
